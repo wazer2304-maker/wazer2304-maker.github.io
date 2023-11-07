@@ -4,7 +4,9 @@ const argument_acceptors = {
 	"help": [],
 	"link": ["url", "add", "remove", "help"],
 	"name": ["set"],
-	"mafy": []
+	"mafy": ["start", "stop"],
+	"todo": [],
+	"clear": [],
 }
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
@@ -53,6 +55,13 @@ function create_line(text, system, option) {
 	document.getElementById("output")
 		.appendChild(line);
 	scroll_to_latest(lines);
+}
+function clear_console() {
+create_line("Console cleared.", true, 0);
+setTimeout(function() {
+	document.getElementById("output")
+	.innerHTML = "";
+}, 600);
 }
 
 function get_args(data) { // returns a json object of the arguments
@@ -143,13 +152,13 @@ function interpret(input) { // interprets the input
 
 function available_arguments(command) { // returns the available arguments
 	args = argument_acceptors[command];
-	format = "<br>&nbsp; * ";
+	format = "<br>&nbsp;";
 	if (args[0] == null) {
-		args = format + " None.";
+		args = format + " (None)";
 		len = 0;
 	} else {
 		len = args.length;
-		args = format + " /" + args.join(format+" /") + " "; 
+		args = format + " &gt; /" + args.join(format+" &gt; /") + " "; 
 	}
 	return args, ("(" + len + ")");
 }
@@ -164,7 +173,7 @@ function default_help() {
 	for (var i = 0; i < Object.keys(argument_acceptors).length; i++) {
 		command = Object.keys(argument_acceptors)[i];
 		args, length = available_arguments(command);
-		create_line('<i class="fa-solid fa-gear"></i>' + " " + command.toUpperCase() + " " + length + args, true, 0);
+		create_line("  " + command.toUpperCase() + " " + length + args, true, 0);
 	}
 }
 

@@ -94,8 +94,3 @@ console input:focus {
     border: rgb(0, 0, 0) solid 1px;
     border-radius: 60%;
 }
-
-output i {
-    font-size: 1px;
-    height: 1px;
-}

@@ -1,6 +1,8 @@
+command_exceptions = ["help", "todo", "clear"];
+
 function run(command, command_args) {
     
-    if (command != "help") {
+    if (!command_exceptions.includes(command)) {
     if (command_args["help"] || Object.keys(command_args)[0] == null) {
         default_arg(command);
         return
@@ -28,11 +30,7 @@ if (command == "console") {
         create_line("Font size changed to " + command_args["size"], true, 0);
     }
     if (command_args["clear"]) {
-        create_line("Console cleared.", true, 0);
-        setTimeout(function() {
-            document.getElementById("output")
-            .innerHTML = "";
-        }, 600);
+        clear_console();
     }
     if (command_args["reset"]) {
         document.getElementById("output")
@@ -54,16 +52,22 @@ if (command == "help") {
     default_help();
 }
 
+/* Clear command */
+if (command == "clear") {
+    clear_console();
+}
 
-
-
+/* Todo command */
+if (command == "todo") {
+    create_line("Fixa uninterpreted, skapa server för fetchning av mat, läxor, länkar, fixa gränser för argument (namn kan inte vara ''), skapa mafy ", true, 0);
+}
 
 
 /* Name command */
 if (command == "name") {
     if (command_args["set"]) {
         user = command_args["set"];
-        create_line("Name changed to " + user, true, 0);
+        create_line("Name changed to '" + user + "'", true, 0);
     }
 }
 
@@ -117,6 +121,7 @@ if (command == "link") {
 /* mafy command */
 if (command == "mafy") {
     random_number = Math.floor(Math.random() * 100);
+    create_line(random_number, true, 0);
 }
 
 
