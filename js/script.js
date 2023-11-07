@@ -1,30 +1,29 @@
-var user = "user";
-const argument_acceptors = {
-	"console": ["color", "background", "size", "clear", "reset", "help"],
-	"help": [],
-	"link": ["url", "add", "remove", "help"],
-	"name": ["set"],
-	"mafy": ["start", "stop"],
-	"todo": [],
-	"clear": [],
-}
-const links = {
-	"saits": "https://saits-vaxjo.se.ist.com/student/",
-	"ist": "https://vaxjo-student-learn.se.ist.com/index.html#/app/review",
-	"schema": "https://web.skola24.se/timetable/timetable-viewer/vaxjo.skola24.se/Katedralskolan/",
-	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
-}
-
 window.onload = function () { // when the page loads
+	document.capture = false;
 	input = document.getElementById("input");
 	input.onkeyup = function (e) {
 		var ev = e || event;
 		if (ev.keyCode == 13) {
-			interpret(input.value);
+			if (document.capture==false) {
+				interpret(input.value);
+			} else {
+				captured_input(input.value);
+			}
 			input.value = "";
 		}
 	}
 };
+
+function img(url) {
+    var image = document.createElement("img");
+    image.src = url;
+    image.className = "mafy_img";
+    return image;
+}
+
+function append(element) {
+    document.getElementById("output").appendChild(element);
+}
 
 function scroll_to_latest(lines) {
 	document.getElementById("line" + lines)
@@ -56,12 +55,35 @@ function create_line(text, system, option) {
 		.appendChild(line);
 	scroll_to_latest(lines);
 }
+
 function clear_console() {
 create_line("Console cleared.", true, 0);
 setTimeout(function() {
 	document.getElementById("output")
 	.innerHTML = "";
 }, 600);
+}
+
+function clear_console_quick() {
+		document.getElementById("output")
+		.innerHTML = "";
+}
+
+function reload_math() {
+	MathJax.Hub.Typeset();
+}
+
+function captured_input(value) {
+	if (value == "exit") {
+		document.capture = false;
+		document.mafycapture = false;
+		clear_console_quick();
+		create_line("Exited capture mode.", true, 0);
+	} else {
+		if (document.mafycapture == true) {
+			mafy_capture(value);
+		}
+	}
 }
 
 function get_args(data) { // returns a json object of the arguments
@@ -142,6 +164,7 @@ function interpret(input) { // interprets the input
 		redundant_arguments = check_for_redundant_arguments(command, command_args);
 		if (redundant_arguments[0]) {
 			create_line("Redundant arguments: " + redundant_arguments, true, 1);
+			default_arg(command);
 		}
 		execute(command, JSON.parse(command_args));
 	}
