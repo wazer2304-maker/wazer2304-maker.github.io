@@ -30,7 +30,7 @@ function scroll_to_latest(lines) {
 		.scrollIntoView();
 }
 
-function create_line(text, system, option) {
+function create_line(text, system, option, class_name) {
 	var line = document.createElement("p");
 	if (option == 2) {
 		text = '<i class="fa-solid fa-rectangle-xmark"></i>' + " ERROR: " + text;
@@ -51,6 +51,7 @@ function create_line(text, system, option) {
 		.childNodes.length;
 	line.id = "line" + lines;
 	line.innerHTML = text;
+	line.className = line.className + " " + class_name;
 	document.getElementById("output")
 		.appendChild(line);
 	scroll_to_latest(lines);
@@ -177,7 +178,7 @@ function available_arguments(command) { // returns the available arguments
 	args = argument_acceptors[command];
 	format = "<br>&nbsp;";
 	if (args[0] == null) {
-		args = format + " (None)";
+		args = format + " <span class='dehance'>(None)</span>";
 		len = 0;
 	} else {
 		len = args.length;

@@ -4,7 +4,7 @@ var capture = false;
 const argument_acceptors = {
 	"console": ["color", "background", "size", "clear", "reset"],
 	"help": [],
-	"link": ["url", "add", "remove"],
+	"link": ["url", "links"],
 	"name": ["set"],
 	"mafy": [],
 	"clear": []
@@ -52,7 +52,7 @@ if (command == "console") {
     }
     if (command_args["reset"]) {
         document.getElementById("output")
-            .style.color = "white";
+            .style.color = "lightblue";
         document.getElementById("output")
             .style.background = "none";
         document.getElementById("output")
@@ -111,23 +111,12 @@ if (command == "link") {
             }
         }
     }
-    if (command_args["add"]) {
-        if (command_args["add"] in links) {
-            create_line("Shortcut already exists.", true, 1);
-        }
-        else {
-            /*send to server, not implemented*/
-            create_line("Shortcut added.", true, 0);
-        }
-    }
-    if (command_args["remove"]) {
-        if (command_args["remove"] in links) {
-            /*send to server, not implemented*/
-            create_line("Shortcut removed.", true, 0);
-        }
-        else {
-            create_line("Shortcut does not exist.", true, 1);
-        }
+
+    if (command_args["links"]) {
+            create_line("Available links: ", true, 0);
+            for (var key in links) {
+                create_line("&nbsp; > " + key, true, 0);
+            }
     }
 }
 
@@ -139,7 +128,10 @@ if (command == "link") {
     }
 
 
-}
+} /* --------- End of run() ------------- */
+
+
+
 
 
 
@@ -165,26 +157,32 @@ function mafy_question() {
     
     questionNum = m["questionNum"];
     answer = m["answer"];
-
+    
     question = m["question"];
     question = mafy_img_parse(question);
     
-    create_line(questionNum + ". <hr><span class='larger'>" + question + "</span>", true, 0);
+    create_line("Fråga " + questionNum + ".", true, 0);
+    create_line("Använd '#' för kommentarer. <br>", true, 0, "dehance");
+    create_line(question, true, 0, "larger question");
     reload_math();
     
     input = document.getElementById("input");
 }
 
-
 function mafy_capture(value) {
+    if (value[0] == "#") {
+        create_line(value.substring(1), true, 0);
+        reload_math();
+        return;
+    }
     if (document.mafy_revealed == true) {
         document.mafy_revealed = false;
         mafy_question();
         return;
     }
     answer = mafy_img_parse(answer);
-    create_line("<br><br><span class='answer_larger'>Ditt svar: " + value + "</span>", true, 0);
-    create_line("<span class='answer_larger'>Rätt svar: " + answer + "</span>", true, 0);
+    create_line("<br><br>Ditt svar: " + value, true, 0, "answer_larger");
+    create_line("Rätt svar: " + answer, true, 0, "answer_larger correct");
     document.mafy_revealed = true;
     reload_math();
 }

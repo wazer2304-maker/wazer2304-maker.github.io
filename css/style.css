@@ -40,6 +40,8 @@ main console {
     grid-area: output;
     padding: 0px 100px 0px 100px;
     overflow: scroll;
+    color: lightblue;
+    font-weight: 900;
 }
 
 console input {
@@ -67,10 +69,11 @@ console input:focus {
 }
 
 .console_output {
-    color: rgb(241, 241, 241);
+    color: rgba(238, 238, 238, 0.93);
     font-style: italic;
     padding-bottom: 12px;
     padding-left: 40px;
+    font-weight: 600;
 }
 
 .console_error {
@@ -108,5 +111,24 @@ console input:focus {
 }
 
 .answer_larger {
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.dehance {
+    font-weight: 600;
+    color: grey;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.question {
+    background: rgb(21, 21, 21);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 200;
+}
+
+.correct {
+    text-shadow: 0px -3px 7px green;
 }
