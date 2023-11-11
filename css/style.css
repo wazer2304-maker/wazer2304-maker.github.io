@@ -127,8 +127,15 @@ console input:focus {
     border-radius: 20px;
     color: white;
     font-weight: 200;
+    margin-bottom: 50px;
 }
 
 .correct {
-    text-shadow: 0px -3px 7px green;
+    text-shadow: 0px -1px 3px green;
+}
+
+.mini_comment {
+    font-size: 17px;
+    color: rgb(197, 197, 197);
+    font-weight: 200;
 }

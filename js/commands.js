@@ -120,11 +120,32 @@ if (command == "link") {
     }
 }
 
-
-
+    
+    
     /* mafy command */
     if (command == "mafy") {
-        mafy_question();
+        clear_console_quick();
+
+        create_line("Använd '#' för kommentarer.", true, 0, "larger");
+        create_line("Använd 'stop' för att avsluta.", true, 0, "larger");
+        create_line("Lycka till!<br><br>", true, 0, "larger");
+        
+        setTimeout(function() {
+            create_line(" 3...", true, 0);
+        }, 3000);
+        setTimeout(function() {
+            create_line(" 2..", true, 0);
+        }, 4000);
+        setTimeout(function() {
+            create_line(" 1.", true, 0);
+        }, 5000);
+
+        setTimeout(function() {
+            mafy_question();
+        }, 6000);
+
+
+
     }
 
 
@@ -162,16 +183,16 @@ function mafy_question() {
     question = mafy_img_parse(question);
     
     create_line("Fråga " + questionNum + ".", true, 0);
-    create_line("Använd '#' för kommentarer. <br>", true, 0, "dehance");
     create_line(question, true, 0, "larger question");
     reload_math();
     
+    document.title = "Fråga " + questionNum;
     input = document.getElementById("input");
 }
 
 function mafy_capture(value) {
     if (value[0] == "#") {
-        create_line(value.substring(1), true, 0);
+        create_line(value.substring(1), true, 0, "mini_comment");
         reload_math();
         return;
     }
