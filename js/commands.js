@@ -1,4 +1,4 @@
-var user = "user";
+var user = "waz";
 var capture = false;
 
 const argument_acceptors = {
@@ -6,7 +6,7 @@ const argument_acceptors = {
 	"help": [],
 	"link": ["url", "links"],
 	"name": ["set"],
-	"mafy": [],
+	"mafy": ["questions", "tpq", "help"],
 	"clear": []
 }
 const links = {
@@ -124,6 +124,30 @@ if (command == "link") {
     
     /* mafy command */
     if (command == "mafy") {
+        if (command_args["questions"]) {
+            number_questions = command_args["questions"];
+        } else {
+            number_questions = 10000;
+        }
+        
+        if (command_args["help"]) {
+            create_line("<br>Mafy är ett program som hjälper dig att träna på matematik och fysikprovet.", true, 0);
+            create_line("Du kan använda kommandot -r för att markera rätt och -f för att markera fel.", true, 0);
+            create_line("Du kan också använda #-tecknet för att kommentera eller skriva beräkningar.", true, 0);
+            create_line("Du kan också använda -stop för att avsluta omgången.<br>", true, 0);
+            create_line("Du kan också använda /tpq för att sätta tiden (minuter) per fråga.", true, 0);
+            create_line("Exempel: 'mafy /questions 75 /tpq 4' för ett riktigt prov-exempel", true, 0);
+            return;
+        }
+
+        
+        if (command_args["tpq"]) {
+            tpq = command_args["tpq"];
+            time = tpq * number_questions * 60 + 6;
+            original_time = time;
+            mafy_time(time);
+        }
+        
         document.total = 0;
         document.correct = 0;
         document.wrong = 0;
@@ -134,13 +158,13 @@ if (command == "link") {
         create_line("<br>Lycka till!<br><br>", true, 0, "larger correct");
         
         setTimeout(function() {
-            create_line(" 3...", true, 0, "red");
+            create_line(" 3 !::", true, 0, "red");
         }, 3000);
         setTimeout(function() {
-            create_line(" 2..", true, 0, "yellow");
+            create_line(" 2 !!:", true, 0, "yellow");
         }, 4000);
         setTimeout(function() {
-            create_line(" 1.", true, 0, "green");
+            create_line(" 1 !!!", true, 0, "green");
         }, 5000);
 
         setTimeout(function() {
@@ -148,7 +172,7 @@ if (command == "link") {
         }, 6000);
 
 
-
+    
     }
 
 
@@ -192,6 +216,22 @@ function mafy_question() {
     input = document.getElementById("input");
 }
 
+function end_mafy() {
+    clear_console_quick();
+    create_line("Du fick " + document.correct + " rätt av " + document.total + " frågor. (" + Math.round((document.correct/document.total)*100) + "%)", true, 0, "larger");
+    document.capture = false;
+    document.mafycapture = false;
+    document.title = "Mafy Klart.";
+    godkänt = 30/75;
+    if (document.correct/document.total >= godkänt) {
+        create_line("Du fick godkänt! Gräns: 40%", true, 0, "correct");
+    } else {
+        create_line("Du fick underkänt. Gräns: 40%", true, 0, "wrong");
+    }
+    create_line("<br><br>", true, 0);
+    reload_math();
+}
+
 function mafy_capture(value) {
     if (value[0] == "#") {
         create_line(value.substring(1), true, 0, "mini_comment");
@@ -212,7 +252,11 @@ function mafy_capture(value) {
     }
     if (value == "" && document.mafy_revealed == true) {
         document.mafy_revealed = false;
-        mafy_question();
+        if (document.total < number_questions) {
+            mafy_question();
+        } else {
+            end_mafy();
+        }
         return;
     }
     answer = mafy_img_parse(answer);
@@ -222,4 +266,23 @@ function mafy_capture(value) {
     create_line("Rätt: " + document.correct + " Fel: " + document.wrong + " Totalt: " + document.total, true, 0);
     document.mafy_revealed = true;
     reload_math();
+}
+
+function mafy_time(time){
+    m = Math.round(time/0.6)/100;
+    if (document.capture == false && time < original_time - 10) {
+        return;
+    }
+    if (time == 0) {
+        document.title = "Slut på tid!";
+        return;
+    }
+    if (m == 1) {
+        document.title = "1 minut kvar.";
+    } else {
+        document.title = m + " minuter kvar.";
+    }
+    setTimeout(function() {
+        mafy_time(time - 1);
+    }, 1000);
 }
