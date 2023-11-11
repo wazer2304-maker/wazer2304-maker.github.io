@@ -75,7 +75,7 @@ function reload_math() {
 }
 
 function captured_input(value) {
-	if (value == "stop") {
+	if (value == "-stop") {
 		document.capture = false;
 		document.mafycapture = false;
 		clear_console_quick();

@@ -124,20 +124,23 @@ if (command == "link") {
     
     /* mafy command */
     if (command == "mafy") {
-        clear_console_quick();
+        document.total = 0;
+        document.correct = 0;
+        document.wrong = 0;
 
-        create_line("Använd '#' för kommentarer.", true, 0, "larger");
-        create_line("Använd 'stop' för att avsluta.", true, 0, "larger");
-        create_line("Lycka till!<br><br>", true, 0, "larger");
+        clear_console_quick();
+        
+        create_line("'#' används för kommentarer/beräkningar, <br>-stop för att avsluta omgången, <br>-r för att markera rätt och <br>-f för att markera fel.", true, 0, "larger");
+        create_line("<br>Lycka till!<br><br>", true, 0, "larger correct");
         
         setTimeout(function() {
-            create_line(" 3...", true, 0);
+            create_line(" 3...", true, 0, "red");
         }, 3000);
         setTimeout(function() {
-            create_line(" 2..", true, 0);
+            create_line(" 2..", true, 0, "yellow");
         }, 4000);
         setTimeout(function() {
-            create_line(" 1.", true, 0);
+            create_line(" 1.", true, 0, "green");
         }, 5000);
 
         setTimeout(function() {
@@ -158,7 +161,6 @@ if (command == "link") {
 
 function mafy_img_parse(question) {
     if (question.includes("![](")) {
-        alert("148");
         url = question.split("![](")[1].split(")")[0];
         question = question.split("![](")[0];
         append(img(url));
@@ -196,7 +198,19 @@ function mafy_capture(value) {
         reload_math();
         return;
     }
-    if (document.mafy_revealed == true) {
+    if (value[0] == "-") {
+        if (value[1] == "r") {
+            document.correct = document.correct + 1;
+            create_line("+1 Rätt", true, 0, "correct");
+        } else {
+            document.wrong = document.wrong + 1;
+            create_line("+1 Fel", true, 0, "wrong");
+        }
+        document.total = document.total + 1;
+        
+        return;
+    }
+    if (value == "" && document.mafy_revealed == true) {
         document.mafy_revealed = false;
         mafy_question();
         return;
@@ -204,6 +218,8 @@ function mafy_capture(value) {
     answer = mafy_img_parse(answer);
     create_line("<br><br>Ditt svar: " + value, true, 0, "answer_larger");
     create_line("Rätt svar: " + answer, true, 0, "answer_larger correct");
+    create_line("<br><br>Tryck på enter för att fortsätta.", true, 0, "larger");
+    create_line("Rätt: " + document.correct + " Fel: " + document.wrong + " Totalt: " + document.total, true, 0);
     document.mafy_revealed = true;
     reload_math();
 }
