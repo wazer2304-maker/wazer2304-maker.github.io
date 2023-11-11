@@ -1,4 +1,5 @@
-const questions = [
+const questions = 
+[
     {
         "questionNum": "2023-1",
         "question": "Talen $a$ och $b$ \u00e4r reella och s\u00e5dana att $|a| \\neq|b|$ och $a^{2}+b^{2}>0$. Givet att $x=\\frac{\\left(a^{2}+b^{2}\\right)\\left(a^{16}-b^{16}\\right)}{\\left(a^{2}-b^{2}\\right)\\left(a^{4}+b^{4}\\right)}$, s\u00e5 g\u00e4ller att $x$ \u00e4r lika med\n(a) $a^{4}+b^{4}$\n(b) $\\left(a^{2}+b^{2}\\right)^{2}\\left(a^{8}+b^{8}\\right)$\n(c) $\\left(a^{2}+b^{2}\\right)^{2}$\n(d) inget av (a)-(c)\n\n",

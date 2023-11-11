@@ -174,7 +174,7 @@ function interpret(input) { // interprets the input
 	}
 }
 
-function available_arguments(command) { // returns the available arguments
+function available_arguments(command) { // returns the available argument/s
 	args = argument_acceptors[command];
 	format = "<br>&nbsp;";
 	if (args[0] == null) {
