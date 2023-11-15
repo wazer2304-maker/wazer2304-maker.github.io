@@ -6,8 +6,9 @@ const argument_acceptors = {
 	"help": [],
 	"link": ["url", "links"],
 	"name": ["set"],
-	"mafy": ["questions", "tpq", "help"],
-	"clear": []
+	"mafy": ["questions", "tpq", "help", "todo"],
+	"clear": [],
+    "mira": []
 }
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
@@ -16,7 +17,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy"];
+command_exceptions = ["help", "clear", "mafy", "mira"];
 
 function run(command, command_args) {
     
@@ -124,6 +125,10 @@ if (command == "link") {
     
     /* mafy command */
     if (command == "mafy") {
+        if (command_args["todo"]) {
+            create_line("fysik 2, trigonometri, ekvationer, icke reellt, geo summa ", true, 0);
+            return;
+        }
         if (command_args["questions"]) {
             number_questions = command_args["questions"];
         } else {
@@ -173,6 +178,13 @@ if (command == "link") {
 
 
     
+    }
+
+    if (command == "mira") {
+        clear_console_quick();
+        for(i = 0; i < 100; i++) {
+            create_line("JAG ÄLSKAR DIG " + (i+1) + "%", true, 0, "larger correct");
+        }
     }
 
 
