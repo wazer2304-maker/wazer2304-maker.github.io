@@ -77,12 +77,16 @@ function reload_math() {
 function captured_input(value) {
 	if (value == "-stop") {
 		document.capture = false;
+		document.writecapture = false;
 		document.mafycapture = false;
 		clear_console_quick();
 		create_line("Exited capture mode.", true, 0);
 	} else {
 		if (document.mafycapture == true) {
 			mafy_capture(value);
+		}
+		if (document.writecapture == true) {
+			write_capture(value);
 		}
 	}
 }

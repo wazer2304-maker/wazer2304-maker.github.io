@@ -1,4 +1,4 @@
-var user = "waz";
+var user = "user";
 var capture = false;
 
 const argument_acceptors = {
@@ -8,7 +8,8 @@ const argument_acceptors = {
 	"name": ["set"],
 	"mafy": ["questions", "tpq", "help", "todo"],
 	"clear": [],
-    "mira": []
+    "mira": [],
+    "write": []
 }
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
@@ -17,7 +18,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy", "mira"];
+command_exceptions = ["help", "clear", "mafy", "mira", "write"];
 
 function run(command, command_args) {
     
@@ -187,6 +188,12 @@ if (command == "link") {
         }
     }
 
+    if (command == "write") {
+        document.capture = true;
+        document.writecapture = true;
+        clear_console_quick();
+        create_line("Use '-stop' to escape.", true, 0, "mini_comment");
+    }
 
 } /* --------- End of run() ------------- */
 
@@ -297,4 +304,12 @@ function mafy_time(time){
     setTimeout(function() {
         mafy_time(time - 1);
     }, 1000);
+}
+
+function write_capture(value) {
+    if (value[0] == "#") {
+        value = "$" + value.substring(1) + "$";
+    }
+    create_line(value, true, 0, "clean");
+    reload_math();
 }
