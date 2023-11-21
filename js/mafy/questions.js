@@ -7670,16 +7670,6 @@ const questions =
         ]
     },
     {
-        "questionNum": "f2009-16",
-        "question": "En kropp med massan $m$ faller i atmosf\u00e4ren under inverkan av tyngdkraften, och p\u00e5verkas ocks\u00e5 av en luftmotst\u00e5ndskraft. Antag att luftmotst\u00e5ndskraften \u00e4r proportionell mot farten $v \\mathrm{i}$ kvadrat, enligt uttrycket $\\left|\\vec{F}_{\\text {luft }}\\right|=\\frac{1}{2} C \\varrho A v^{2}$, d\u00e4r $A$ \u00e4r kroppens tv\u00e4rsnittsarea, $\\varrho$ \u00e4r luftens densitet och $C$ \u00e4r en dimensionl\u00f6s formfaktor som beror p\u00e5 kroppens geometri (detta brukar vara en bra approximation f\u00f6r relativt stora hastigheter). N\u00e4r kroppen faller kommer hastigheten gradvis att n\u00e4rma sig en gr\u00e4nshastighet $v_{0}$. Uttryck $v_{0}$ i termer av \u00f6vriga relevanta storheter! ",
-        "answer": "oljan h\u00f6gst. $3 \\mathrm{~mm}$ ( $8 \\mathrm{~mm}$ godk\u00e4nns. $9 \\mathrm{~mm}$ och $1 \\mathrm{~cm}$ ger 1 po\u00e4ng)",
-        "keywords": [
-            "mekanik",
-            "luftmotst\u00c3\u00a5nd",
-            "hastighet"
-        ]
-    },
-    {
         "questionNum": "f2009-17",
         "question": "Norrsken uppst\u00e5r n\u00e4r snabba laddade partiklar (t.ex. elektroner med hastigheter p\u00e5 c:a 350 $\\mathrm{km} / \\mathrm{s}$ ) i solvinden tr\u00e4ffar jordens atmosf\u00e4r. L\u00e5t styrkan p\u00e5 jordens magnetf\u00e4lt vara $50 \\mu \\mathrm{T}$. Ber\u00e4kna den s.k. cyklotronfrekvensen, dvs. frekvensen f\u00f6r den cirkel- eller spiralr\u00f6relse en elektron har i detta magnetf\u00e4lt!",
         "answer": "$v=\\sqrt{\\frac{2 m g}{C \\varrho A}}$",
