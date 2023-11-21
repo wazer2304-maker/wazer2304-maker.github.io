@@ -7298,7 +7298,7 @@ const questions =
     {
         "questionNum": "f2011-19",
         "question": "Tolv likadana tr\u00e5dar, vardera med motst\u00e5ndet $1.0 \\Omega$, har kopplats samman s\u00e5 att de bildar en oktaeder (se figuren). Hur stort \u00e4r motst\u00e5ndet mellan h\u00f6rnen $\\mathbf{A}$ och $\\mathbf{B}$ ?\n\n![](https://cdn.mathpix.com/cropped/2023_05_29_6c8df46059ee68867c1fg-7.jpg?height=603&width=517&top_left_y=932&top_left_x=313)",
-        "answer": "$50 \\Omega$",
+        "answer": "$0.5 \\Omega$",
         "keywords": [
             "elektricitet",
             "resistans",
