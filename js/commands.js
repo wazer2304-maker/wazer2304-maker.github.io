@@ -8,7 +8,6 @@ const argument_acceptors = {
 	"name": ["set"],
 	"mafy": ["questions", "tpq", "help", "todo"],
 	"clear": [],
-    "mira": [],
     "write": []
 }
 const links = {
@@ -18,7 +17,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy", "mira", "write"];
+command_exceptions = ["help", "clear", "mafy", "write"];
 
 function run(command, command_args) {
     
@@ -181,12 +180,6 @@ if (command == "link") {
     
     }
 
-    if (command == "mira") {
-        clear_console_quick();
-        for(i = 0; i < 100; i++) {
-            create_line("JAG ÄLSKAR DIG " + (i+1) + "%", true, 0, "larger correct");
-        }
-    }
 
     if (command == "write") {
         document.capture = true;
