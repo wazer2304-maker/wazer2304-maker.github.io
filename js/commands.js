@@ -8,7 +8,6 @@ const argument_acceptors = {
 	"name": ["set"],
 	"mafy": ["questions", "tpq", "help", "todo"],
 	"clear": [],
-    "hokis": [],
     "write": []
 }
 const links = {
@@ -18,7 +17,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["hokis", "help", "clear", "mafy", "write"];
+command_exceptions = ["help", "clear", "mafy", "write"];
 
 function run(command, command_args) {
     
@@ -64,10 +63,6 @@ if (command == "console") {
 }
 
 
-
-if (command == "hokis") {
-    create_line("Hokis är en av de bästa människorna jag känner. <br> Hon är snäll, rolig och smart. <br> Hon är också en av de bästa programmerarna jag känner. <br> Hon är också en av de bästa vänerna jag känner");
-}
 
 /* Help command */
 if (command == "help") {
