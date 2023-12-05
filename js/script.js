@@ -1,3 +1,5 @@
+const wolfram_api_url = "https://wolfram.lilquaily.repl.co/"
+
 window.onload = function () { // when the page loads
 	document.capture = false;
 	input = document.getElementById("input");
@@ -5,7 +7,7 @@ window.onload = function () { // when the page loads
 		var ev = e || event;
 		if (ev.keyCode == 13) {
 			if (document.capture==false) {
-				interpret(input.value.toLowerCase());
+				interpret(input.value);
 			} else {
 				captured_input(input.value);
 			}
@@ -44,7 +46,9 @@ function create_line(text, system, option, class_name) {
 		.childNodes.length;
 	line.id = "line" + lines;
 	line.innerHTML = text;
-	line.className = line.className + " " + class_name;
+	if (class_name != null) {
+		line.className = line.className + " " + class_name;
+	}
 	document.getElementById("output")
 		.appendChild(line);
 	scroll_to_latest(lines);
@@ -62,6 +66,26 @@ function clear_console_quick() {
 		document.getElementById("output")
 		.innerHTML = "";
 }
+
+async function compute_line(line, query) {
+	setTimeout(() => {
+		t = fetch(wolfram_api_url, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: (JSON.stringify({
+				query: query
+			}))
+		})
+		
+		t.then(response => response.json(
+		)).then(data => {
+			create_line(data, true, 0, "mini_comment");
+		});
+	}, 100);
+		
+	}
 
 function reload_math() {
 	MathJax.Hub.Typeset();
@@ -131,13 +155,6 @@ function get_command(data) { // returns the command
 	return command;
 }
 
-function get_uninterpreted(data, command, command_args) { // returns the uninterpreted input
-	uninterpreted = data.split(" ");
-	uninterpreted.shift();
-	uninterpreted = uninterpreted.join(" ");
-	return uninterpreted;
-}
-
 function containsObject(obj, list) {
 	var i;
 	len = list.length;
@@ -173,12 +190,10 @@ function does_command_exist(command) { // checks if the command exists
 
 function interpret(input) { // interprets the input
 	create_line(input, false, 0);
-	command = get_command(input);
+	command = get_command(input).toLowerCase();
 	command_args = get_args(input);
 	does_exist = does_command_exist(command);
 	if (does_exist == true) {
-		/*uninterpreted = get_uninterpreted(input, command, command_args);
-		console.log("4) uninterpreted: " + uninterpreted);*/
 		redundant_arguments = check_for_redundant_arguments(command, command_args);
 		if (redundant_arguments[0]) {
 			create_line("Redundant arguments: " + redundant_arguments, true, 1);

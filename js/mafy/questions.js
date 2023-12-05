@@ -2,7 +2,7 @@ const questions =
 [
     {
         "questionNum": "2023-1",
-        "question": "Talen $a$ och $b$ \u00e4r reella och s\u00e5dana att $|a| \<br>eq|b|$ och $a^{2}+b^{2}&gt;0$. Givet att $x=\\frac{\\left(a^{2}+b^{2}\\right)\\left(a^{16}-b^{16}\\right)}{\\left(a^{2}-b^{2}\\right)\\left(a^{4}+b^{4}\\right)}$, s\u00e5 g\u00e4ller att $x$ \u00e4r lika med<br>(a) $a^{4}+b^{4}$<br>(b) $\\left(a^{2}+b^{2}\\right)^{2}\\left(a^{8}+b^{8}\\right)$<br>(c) $\\left(a^{2}+b^{2}\\right)^{2}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Talen $a$ och $b$ \u00e4r reella och s\u00e5dana att $|a| \\neq|b|$ och $a^{2}+b^{2}&gt;0$. Givet att $x=\\frac{\\left(a^{2}+b^{2}\\right)\\left(a^{16}-b^{16}\\right)}{\\left(a^{2}-b^{2}\\right)\\left(a^{4}+b^{4}\\right)}$, s\u00e5 g\u00e4ller att $x$ \u00e4r lika med<br>(a) $a^{4}+b^{4}$<br>(b) $\\left(a^{2}+b^{2}\\right)^{2}\\left(a^{8}+b^{8}\\right)$<br>(c) $\\left(a^{2}+b^{2}\\right)^{2}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "potenser",
@@ -32,7 +32,7 @@ const questions =
     },
     {
         "questionNum": "2023-4",
-        "question": "Om $a$ \u00e4r ett reellt tal $(a \<br>eq 0, a \<br>eq 1)$, s\u00e5 g\u00e4ller att<br>(a) $\\left|\\frac{a+1}{a-1}\\right| \\leq \\frac{|a|-1}{|a|+1}$<br>(b) $\\left|\\frac{a+1}{a-1}\\right| \\leq 1$<br>(c) $\\left|\\frac{a+1}{a-1}\\right| \\leq \\frac{|a|+1}{|a|}$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
+        "question": "Om $a$ \u00e4r ett reellt tal $(a \\neq 0, a \\neq 1)$, s\u00e5 g\u00e4ller att<br>(a) $\\left|\\frac{a+1}{a-1}\\right| \\leq \\frac{|a|-1}{|a|+1}$<br>(b) $\\left|\\frac{a+1}{a-1}\\right| \\leq 1$<br>(c) $\\left|\\frac{a+1}{a-1}\\right| \\leq \\frac{|a|+1}{|a|}$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
         "answer": "d",
         "keywords": [
             "olikheter",
@@ -42,7 +42,7 @@ const questions =
     },
     {
         "questionNum": "2023-5",
-        "question": "Om $a$ \u00e4r ett reellt tal $(a \<br>eq 0, a \<br>eq-1)$, s\u00e5 g\u00e4ller att<br>(a) $\\left|\\frac{a-1}{a+1}\\right| \\leq \\frac{|a|-1}{|a|+1}$<br>(b) $\\left|\\frac{a-1}{a+1}\\right| \\leq 1$<br>(c) $\\left|\\frac{a-1}{a+1}\\right| \\leq \\frac{|a|+1}{|a|}$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
+        "question": "Om $a$ \u00e4r ett reellt tal $(a \\neq 0, a \\neq-1)$, s\u00e5 g\u00e4ller att<br>(a) $\\left|\\frac{a-1}{a+1}\\right| \\leq \\frac{|a|-1}{|a|+1}$<br>(b) $\\left|\\frac{a-1}{a+1}\\right| \\leq 1$<br>(c) $\\left|\\frac{a-1}{a+1}\\right| \\leq \\frac{|a|+1}{|a|}$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
         "answer": "d",
         "keywords": [
             "absolutbelopp",
@@ -82,7 +82,7 @@ const questions =
     },
     {
         "questionNum": "2023-9",
-        "question": "Olikheten $a x^{2}+b x+c&gt;0(a, b, c$ reella) har \u00e4ndligt m\u00e5nga positiva heltalsl\u00f6sningar. Man kan d\u00e5 dra slutsatsen att<br>(a) $a&gt;0$<br>(b) $a \<br>eq 0$<br>(c) $a&lt;0$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Olikheten $a x^{2}+b x+c&gt;0(a, b, c$ reella) har \u00e4ndligt m\u00e5nga positiva heltalsl\u00f6sningar. Man kan d\u00e5 dra slutsatsen att<br>(a) $a&gt;0$<br>(b) $a \\neq 0$<br>(c) $a&lt;0$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "polynom",
@@ -356,7 +356,7 @@ const questions =
     },
     {
         "questionNum": "2022-6",
-        "question": "Om $x \\boxplus y=x^{2}+x y+y^{2}$ f\u00f6r alla reella tal $x$ och $y$, och de reella talen $a, b$ \u00e4r s\u00e5dana att $a \\boxplus b&gt;0$, s\u00e5 kan man dra slutsatsen att<br>(a) $a^{2}+b^{2} \<br>eq 0$<br>(b) $a&gt;0$ och $b&gt;0$<br>(c) $a+b \<br>eq 0$<br>(d) inget av (a)-(c) beh\u00f6ver g\u00e4lla.<br><br>",
+        "question": "Om $x \\boxplus y=x^{2}+x y+y^{2}$ f\u00f6r alla reella tal $x$ och $y$, och de reella talen $a, b$ \u00e4r s\u00e5dana att $a \\boxplus b&gt;0$, s\u00e5 kan man dra slutsatsen att<br>(a) $a^{2}+b^{2} \\neq 0$<br>(b) $a&gt;0$ och $b&gt;0$<br>(c) $a+b \\neq 0$<br>(d) inget av (a)-(c) beh\u00f6ver g\u00e4lla.<br><br>",
         "answer": "a",
         "keywords": [
             "potenser",
@@ -605,7 +605,7 @@ const questions =
     {
         "questionNum": "2022-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan.( $\\max 5 \\mathrm{p})$<br>L\u00f6s olikheten$$\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;\\sqrt{\\frac{2}{x}} .$$",
-        "answer": "Kvadratroten ur ett tal $a$ \u00e4r per definition det icke-negativa tal vars kvadrat \u00e4r lika med $a$. Ur definitionen f\u00f6ljer att $a \\geq 0$ och $\\sqrt{a} \\geq 0$.F\u00f6r att de tre kvadratr\u00f6ttern a som f\u00f6rekommer ska vara definierade kr\u00e4vs att $x-1 \\geq 0, x+1 \\geq 0, x \\geq 0$. F\u00f6r at ingen av n \u00e4mnarna ska vara lika med noll kr\u00e4vs att $x \<br>eq 1, x \<br>eq-1, x \<br>eq 0$. Definitionsm\u00e4ngden best\u0103r allts\u0103 av all a $x$ sad an a att $x&gt;1$.Eftersom $0&lt;\\sqrt{x-1}&lt;\\sqrt{x+1}$ har vi att $\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;0$ f\u00f6r alla $x$ i definitionsm\u00e4ngden. H\u00f6gerledet \u00e4r ocksa positivt f\u00f6r all a till \u0103tna $x$. Det betyder att vi kan kvadrera och vara s\u00e4kra paa att vi efter kvadrering f\u00e4r en olikhet ekvivalent med den givna. Kvadrering ger olikheten$$\\left(\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}\\right)^2=\\left(\\frac{\\sqrt{x+1}-\\sqrt{x-1}}{\\sqrt{x^2-1}}\\right)^2=\\frac{2 x-2 \\sqrt{x^2-1}}{x^2-1}&gt;\\frac{2}{x} .$$Eftersom $x^2-1&gt;0$ och $x&gt;0$ kan vi f\u00f6rl\u00e4nga med bad a n \u00e4mn arn a och be$\\mathrm{h}$ \u00e5lla olikhetstecknet, vilket (efter f\u00f6rkortning med $2&gt;0$ ) ger den ekvivalenta olikheten$$x\\left(x-\\sqrt{x^2-1}\\right)&gt;x^2-1 .$$Enkel omskrivning leder till$$1&gt;x \\sqrt{x^2-1} .$$Aterigen \u00e4r b\u1ea3da leden positiva, sa att kvadrering leder till den ekvivalenta olikheten$$x^4-x^2-1&lt;0 .$$S\u00e4tt $t=x^2$. Andragradsfunktionen $f(t)=t^2-t-1$ antar negativa v\u00e4rden mellan sina nollst\u00e4llen, som \u00e4r $\\frac{1 \\pm \\sqrt{5}}{2}$. Eftersom $t=x^2&gt;1$ kommer olikheten att g\u00e4lla f\u00f6r$$1&lt;x^2&lt;\\frac{1+\\sqrt{5}}{2}$$och eftersom $x&gt;1$ f\u00e4r vi att den givna olikheten \u00e4r $\\mathrm{san} \\mathrm{n}$ om och endast om$$1&lt;x&lt;\\sqrt{\\frac{1+\\sqrt{5}}{2}}$$",
+        "answer": "Kvadratroten ur ett tal $a$ \u00e4r per definition det icke-negativa tal vars kvadrat \u00e4r lika med $a$. Ur definitionen f\u00f6ljer att $a \\geq 0$ och $\\sqrt{a} \\geq 0$.F\u00f6r att de tre kvadratr\u00f6ttern a som f\u00f6rekommer ska vara definierade kr\u00e4vs att $x-1 \\geq 0, x+1 \\geq 0, x \\geq 0$. F\u00f6r at ingen av n \u00e4mnarna ska vara lika med noll kr\u00e4vs att $x \\neq 1, x \\neq-1, x \\neq 0$. Definitionsm\u00e4ngden best\u0103r allts\u0103 av all a $x$ sad an a att $x&gt;1$.Eftersom $0&lt;\\sqrt{x-1}&lt;\\sqrt{x+1}$ har vi att $\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;0$ f\u00f6r alla $x$ i definitionsm\u00e4ngden. H\u00f6gerledet \u00e4r ocksa positivt f\u00f6r all a till \u0103tna $x$. Det betyder att vi kan kvadrera och vara s\u00e4kra paa att vi efter kvadrering f\u00e4r en olikhet ekvivalent med den givna. Kvadrering ger olikheten$$\\left(\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}\\right)^2=\\left(\\frac{\\sqrt{x+1}-\\sqrt{x-1}}{\\sqrt{x^2-1}}\\right)^2=\\frac{2 x-2 \\sqrt{x^2-1}}{x^2-1}&gt;\\frac{2}{x} .$$Eftersom $x^2-1&gt;0$ och $x&gt;0$ kan vi f\u00f6rl\u00e4nga med bad a n \u00e4mn arn a och be$\\mathrm{h}$ \u00e5lla olikhetstecknet, vilket (efter f\u00f6rkortning med $2&gt;0$ ) ger den ekvivalenta olikheten$$x\\left(x-\\sqrt{x^2-1}\\right)&gt;x^2-1 .$$Enkel omskrivning leder till$$1&gt;x \\sqrt{x^2-1} .$$Aterigen \u00e4r b\u1ea3da leden positiva, sa att kvadrering leder till den ekvivalenta olikheten$$x^4-x^2-1&lt;0 .$$S\u00e4tt $t=x^2$. Andragradsfunktionen $f(t)=t^2-t-1$ antar negativa v\u00e4rden mellan sina nollst\u00e4llen, som \u00e4r $\\frac{1 \\pm \\sqrt{5}}{2}$. Eftersom $t=x^2&gt;1$ kommer olikheten att g\u00e4lla f\u00f6r$$1&lt;x^2&lt;\\frac{1+\\sqrt{5}}{2}$$och eftersom $x&gt;1$ f\u00e4r vi att den givna olikheten \u00e4r $\\mathrm{san} \\mathrm{n}$ om och endast om$$1&lt;x&lt;\\sqrt{\\frac{1+\\sqrt{5}}{2}}$$",
         "keywords": [
             "olikheter",
             "r\u00c3\u00b6tter",
@@ -675,7 +675,7 @@ const questions =
     },
     {
         "questionNum": "2021-7",
-        "question": "Talen $a, b, c$ \u00e4r reella och s\u00e5dana att $a^{2}+b^{2}+c^{2}&gt;0$. Ekvationen $a x^{2}+b x+c=0$ har tv\u00e5 olika l\u00f6sningar. Man kan d\u00e5 dra slutsatsen att<br>(a) $c&lt;0$<br>(b) $a&gt;0$<br>(c) $b^{2} \<br>eq 4 a c$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Talen $a, b, c$ \u00e4r reella och s\u00e5dana att $a^{2}+b^{2}+c^{2}&gt;0$. Ekvationen $a x^{2}+b x+c=0$ har tv\u00e5 olika l\u00f6sningar. Man kan d\u00e5 dra slutsatsen att<br>(a) $c&lt;0$<br>(b) $a&gt;0$<br>(c) $b^{2} \\neq 4 a c$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "c",
         "keywords": [
             "polynom",
@@ -1051,7 +1051,7 @@ const questions =
     },
     {
         "questionNum": "2019-14",
-        "question": "F\u00f6r alla $b&gt;0$ och $a&gt;0, a \<br>eq 1$, g\u00e4ller att<br>(a) $\\ln b=\\frac{\\log _{a} b}{\\log _{a} e}$<br>(b) $\\ln b=\\frac{\\log _{a} e}{\\log _{a} b}$<br>(c) $\\ln b=\\log _{a} b \\cdot \\log _{a} e$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
+        "question": "F\u00f6r alla $b&gt;0$ och $a&gt;0, a \\neq 1$, g\u00e4ller att<br>(a) $\\ln b=\\frac{\\log _{a} b}{\\log _{a} e}$<br>(b) $\\ln b=\\frac{\\log _{a} e}{\\log _{a} b}$<br>(c) $\\ln b=\\log _{a} b \\cdot \\log _{a} e$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
         "answer": "a",
         "keywords": [
             "logaritmfunktioner",
@@ -1259,7 +1259,7 @@ const questions =
     },
     {
         "questionNum": "2018-4",
-        "question": "Ekvationen $a x^{2}+b x+c=0$, d\u00e4r $a \<br>eq 0$, har tv\u00e5 olika l\u00f6sningar f\u00f6r<br>(a) $b^{2}-4 a c \<br>gtr 0$<br>(b) $b^{2}-4 a c \<br>eq 0$<br>(c) $b^{2}-4 a c \<br>less 0$<br>(d) inget av (a)-(c). <br><br>",
+        "question": "Ekvationen $a x^{2}+b x+c=0$, d\u00e4r $a \\neq 0$, har tv\u00e5 olika l\u00f6sningar f\u00f6r<br>(a) $b^{2}-4 a c \<br>gtr 0$<br>(b) $b^{2}-4 a c \\neq 0$<br>(c) $b^{2}-4 a c \<br>less 0$<br>(d) inget av (a)-(c). <br><br>",
         "answer": "b",
         "keywords": [
             "potenser",
@@ -1318,7 +1318,7 @@ const questions =
     },
     {
         "questionNum": "2018-10",
-        "question": "Olikheten $x^{2}-p x+p^{2} \\leq 0$, d\u00e4r $p \<br>eq 0$ \u00e4r ett reellt tal, g\u00e4ller<br>(a) f\u00f6r alla reella tal $x$<br>(b) endast f\u00f6r $x=p$<br>(c) f\u00f6r inga reella tal $x$<br>(d) inget av (a)-(c).<br><br>",
+        "question": "Olikheten $x^{2}-p x+p^{2} \\leq 0$, d\u00e4r $p \\neq 0$ \u00e4r ett reellt tal, g\u00e4ller<br>(a) f\u00f6r alla reella tal $x$<br>(b) endast f\u00f6r $x=p$<br>(c) f\u00f6r inga reella tal $x$<br>(d) inget av (a)-(c).<br><br>",
         "answer": "c",
         "keywords": [
             "potenser",
@@ -1516,7 +1516,7 @@ const questions =
     },
     {
         "questionNum": "2018-30",
-        "question": "Cirklarna $k_{1}$ och $k_{2}$, med radier $R$ och $r$, tangerar varandra. Linjen $l$ tangerar cirklarna i punkterna $T_{1}$ och $T_{2}$, respektive, d\u00e4r $T_{1} \<br>eq T_{2}$. Best\u00e4m och ange l\u00e4ngden av str\u00e4ckan $T_{1} T_{2}$ (alla l\u00e4ngder anges i samma l\u00e4ngdenhet). <br><br>C.Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan.(max 5p). <br><br>Givet att $a \\geq 0$, finn alla reella l\u00f6sningar till ekvationen<br>$$x^{2}+|x-a|-|x+a|=0 .$$",
+        "question": "Cirklarna $k_{1}$ och $k_{2}$, med radier $R$ och $r$, tangerar varandra. Linjen $l$ tangerar cirklarna i punkterna $T_{1}$ och $T_{2}$, respektive, d\u00e4r $T_{1} \\neq T_{2}$. Best\u00e4m och ange l\u00e4ngden av str\u00e4ckan $T_{1} T_{2}$ (alla l\u00e4ngder anges i samma l\u00e4ngdenhet). <br><br>C.Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan.(max 5p). <br><br>Givet att $a \\geq 0$, finn alla reella l\u00f6sningar till ekvationen<br>$$x^{2}+|x-a|-|x+a|=0 .$$",
         "answer": "$2 \\sqrt{R r}$ (l.e.).",
         "keywords": [
             "cirkeltangenter",
@@ -1742,7 +1742,7 @@ const questions =
     },
     {
         "questionNum": "2017-22",
-        "question": "L\u00f6s ekvationen $x^{2}+x-\\frac{1}{p}=0$, d\u00e4r $p \<br>eq 0$ \u00e4r reell parameter. Ange antalet (till\u00e5tna) heltalsv\u00e4rden f\u00f6r $p$, f\u00f6r vilka ekvationen saknar reella l\u00f6sningar.<br><br>",
+        "question": "L\u00f6s ekvationen $x^{2}+x-\\frac{1}{p}=0$, d\u00e4r $p \\neq 0$ \u00e4r reell parameter. Ange antalet (till\u00e5tna) heltalsv\u00e4rden f\u00f6r $p$, f\u00f6r vilka ekvationen saknar reella l\u00f6sningar.<br><br>",
         "answer": "3 ",
         "keywords": [
             "potenser",
@@ -2755,7 +2755,7 @@ const questions =
     {
         "questionNum": "2014-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan. (max 5p). <br><br>L\u00f6s olikheten<br>$$\\frac{x-1}{x^{2}+4 x+4} \\leq \\frac{1}{x-1}$$",
-        "answer": "Vi b\u00f6rjar med att best\u00e4mma de $x$, f\u00f6r vilka de inblandade funktionerna \u00e4r definierade. Ingen av n\u00e4mnarna f\u00e5r bli 0 , vilket betyder att $x$ inte f\u00e5r vara lika med -2 eller 1 , det vill s\u00e4ga$$x \<br>eq-2, \\quad x \<br>eq 1$$Vi flyttar \u00f6ver alla termer till v\u00e4nsterledet f\u00f6r att kunna j\u00e4mf\u00f6ra med 0 , och skriver sedan om v\u00e4nsterledet s\u00e5 att vi hela tiden f\u00e5r ekvivalenta olikheter:$$\\begin{array}{rll}\\frac{x-1}{x^2+4 x+4} \\leq \\frac{1}{x-1} & \\Leftrightarrow & \\frac{x-1}{(x+2)^2}-\\frac{1}{x-1} \\leq 0 \\& \\Leftrightarrow & \\frac{(x-1)^2-(x+2)^2}{(x-1)(x+2)^2} \\leq 0 \\& \\Leftrightarrow \\quad \\frac{(x-1-x-2)(x-1+x+2)}{(x-1)(x+2)^2} \\leq 0 \\& \\Leftrightarrow \\quad \\frac{2 x+1}{(x-1)(x+2)^2} \\geq 0 .\\end{array}$$Eftersom $(x+2)^2&gt;0$ (kom ih\u00e5g att $x \<br>eq-2$ ), \u00e4r den sista olikheten ekvivalent med olikheten$$\\frac{2 x+1}{x-1} \\geq 0 .$$Alla l\u00f6sningar ges av de till\u00e5tna $x$, f\u00f6r vilka t\u00e4ljaren \u00e4r lika med 0 , eller f\u00f6r vilka t\u00e4ljaren och n\u00e4mnaren har samma tecken. B\u00e5da \u00e4r negativa f\u00f6r alla $x$ s\u00e5dana att $-\\infty&lt;x&lt;-\\frac{1}{2}$, medan b\u00e5da \u00e4r positiva f\u00f6r alla $x$ s\u00e5dana att $1&lt;x&lt;\\infty$. Det betyder att den givna olikhetens l\u00f6sningar \u00e4r alla $x$ som antingen \u00e4r mindre \u00e4n eller lika med $-\\frac{1}{2}$, utom $x=-2$, eller \u00e4r st\u00f6rre \u00e4n 1 , det vill s\u00e4ga alla $x$ som uppfyller$$-\\infty&lt;x&lt;-2 \\quad \\text { eller } \\quad-2&lt;x&lt;-\\frac{1}{2} \\quad \\text { eller } \\quad 1&lt;x&lt;\\infty$$",
+        "answer": "Vi b\u00f6rjar med att best\u00e4mma de $x$, f\u00f6r vilka de inblandade funktionerna \u00e4r definierade. Ingen av n\u00e4mnarna f\u00e5r bli 0 , vilket betyder att $x$ inte f\u00e5r vara lika med -2 eller 1 , det vill s\u00e4ga$$x \\neq-2, \\quad x \\neq 1$$Vi flyttar \u00f6ver alla termer till v\u00e4nsterledet f\u00f6r att kunna j\u00e4mf\u00f6ra med 0 , och skriver sedan om v\u00e4nsterledet s\u00e5 att vi hela tiden f\u00e5r ekvivalenta olikheter:$$\\begin{array}{rll}\\frac{x-1}{x^2+4 x+4} \\leq \\frac{1}{x-1} & \\Leftrightarrow & \\frac{x-1}{(x+2)^2}-\\frac{1}{x-1} \\leq 0 \\& \\Leftrightarrow & \\frac{(x-1)^2-(x+2)^2}{(x-1)(x+2)^2} \\leq 0 \\& \\Leftrightarrow \\quad \\frac{(x-1-x-2)(x-1+x+2)}{(x-1)(x+2)^2} \\leq 0 \\& \\Leftrightarrow \\quad \\frac{2 x+1}{(x-1)(x+2)^2} \\geq 0 .\\end{array}$$Eftersom $(x+2)^2&gt;0$ (kom ih\u00e5g att $x \\neq-2$ ), \u00e4r den sista olikheten ekvivalent med olikheten$$\\frac{2 x+1}{x-1} \\geq 0 .$$Alla l\u00f6sningar ges av de till\u00e5tna $x$, f\u00f6r vilka t\u00e4ljaren \u00e4r lika med 0 , eller f\u00f6r vilka t\u00e4ljaren och n\u00e4mnaren har samma tecken. B\u00e5da \u00e4r negativa f\u00f6r alla $x$ s\u00e5dana att $-\\infty&lt;x&lt;-\\frac{1}{2}$, medan b\u00e5da \u00e4r positiva f\u00f6r alla $x$ s\u00e5dana att $1&lt;x&lt;\\infty$. Det betyder att den givna olikhetens l\u00f6sningar \u00e4r alla $x$ som antingen \u00e4r mindre \u00e4n eller lika med $-\\frac{1}{2}$, utom $x=-2$, eller \u00e4r st\u00f6rre \u00e4n 1 , det vill s\u00e4ga alla $x$ som uppfyller$$-\\infty&lt;x&lt;-2 \\quad \\text { eller } \\quad-2&lt;x&lt;-\\frac{1}{2} \\quad \\text { eller } \\quad 1&lt;x&lt;\\infty$$",
         "keywords": [
             "rationella uttryck",
             "olikheter",
@@ -2764,7 +2764,7 @@ const questions =
     },
     {
         "questionNum": "2013-1",
-        "question": "F\u00f6r alla $a \<br>eq 0$, och $x=\\frac{\\sqrt{a^{2}}-\\sqrt{(-a)^{2}}}{2 a}$, g\u00e4ller att<br><br>(a) $x=-1 $  <br>(b) $x=0 $ <br>(c) $x=1 $ <br>(d) inget av (a)-(c) g\u00e4ller f\u00f6r alla $a \<br>eq 0$.<br><br>",
+        "question": "F\u00f6r alla $a \\neq 0$, och $x=\\frac{\\sqrt{a^{2}}-\\sqrt{(-a)^{2}}}{2 a}$, g\u00e4ller att<br><br>(a) $x=-1 $  <br>(b) $x=0 $ <br>(c) $x=1 $ <br>(d) inget av (a)-(c) g\u00e4ller f\u00f6r alla $a \\neq 0$.<br><br>",
         "answer": "b",
         "keywords": [
             "potenser",
@@ -3113,7 +3113,7 @@ const questions =
     },
     {
         "questionNum": "2012-5",
-        "question": "Olikheten $\\left(\\frac{2 x-1}{2 x+1}\\right)^{2}&gt;0$ har samma l\u00f6sningar som olikheten<br>(a) $(2 x-1)^{2}&gt;0$<br>(b) $2 x-1 \<br>eq 0$<br>(c) $2 x-1&gt;0$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Olikheten $\\left(\\frac{2 x-1}{2 x+1}\\right)^{2}&gt;0$ har samma l\u00f6sningar som olikheten<br>(a) $(2 x-1)^{2}&gt;0$<br>(b) $2 x-1 \\neq 0$<br>(c) $2 x-1&gt;0$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "potenser",
@@ -3363,7 +3363,7 @@ const questions =
     },
     {
         "questionNum": "2012-30",
-        "question": "Triangeln $A B C$ \u00e4r likbent med r\u00e4t vinkel vid h\u00f6rnet $C$. Beteckna $|A B|=c$. Punkten $P$ ligger p\u00e5 sidan $A B(P \<br>eq A, B)$ och vinkeln $\\angle P C B$ \u00e4r lika med \u0628. Ange $|A P|$ i termer av $c$ och $\\tan \\varphi$. <br><br>",
+        "question": "Triangeln $A B C$ \u00e4r likbent med r\u00e4t vinkel vid h\u00f6rnet $C$. Beteckna $|A B|=c$. Punkten $P$ ligger p\u00e5 sidan $A B(P \\neq A, B)$ och vinkeln $\\angle P C B$ \u00e4r lika med \u0628. Ange $|A P|$ i termer av $c$ och $\\tan \\varphi$. <br><br>",
         "answer": "$\\frac{c}{1+\\tan \\varphi}$",
         "keywords": [
             "triangelsatserna",
@@ -3383,7 +3383,7 @@ const questions =
     },
     {
         "questionNum": "2011-1",
-        "question": "$\\mathrm{Om} U=\\frac{4}{4-x^{2}}$, s\u00e5 g\u00e4ller f\u00f6r alla reella $x \<br>eq \\pm 2$ att<br>(a) $U=-U$<br>(b) $U=\\frac{1}{x-2}-\\frac{1}{x+2}$<br>(c) $U&gt;1$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "$\\mathrm{Om} U=\\frac{4}{4-x^{2}}$, s\u00e5 g\u00e4ller f\u00f6r alla reella $x \\neq \\pm 2$ att<br>(a) $U=-U$<br>(b) $U=\\frac{1}{x-2}-\\frac{1}{x+2}$<br>(c) $U&gt;1$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "rationella uttryck",
@@ -3443,7 +3443,7 @@ const questions =
     },
     {
         "questionNum": "2011-7",
-        "question": "Talen $b$ och $c$ \u00e4r reella, $c \<br>eq 0$. Om ekvationen $x^{2}+b x+c=0$ har tv\u00e5 reella l\u00f6sningar med samma tecken, s\u00e5 g\u00e4ller att<br>(a) $b&gt;0$<br>(b) $c&gt;0$<br>(c) $b c&gt;0$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
+        "question": "Talen $b$ och $c$ \u00e4r reella, $c \\neq 0$. Om ekvationen $x^{2}+b x+c=0$ har tv\u00e5 reella l\u00f6sningar med samma tecken, s\u00e5 g\u00e4ller att<br>(a) $b&gt;0$<br>(b) $c&gt;0$<br>(c) $b c&gt;0$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
         "answer": "b",
         "keywords": [
             "polynom",
@@ -3453,7 +3453,7 @@ const questions =
     },
     {
         "questionNum": "2011-8",
-        "question": "Talen $b$ och $c$ \u00e4r reella, $c \<br>eq 0$. Om ekvationen $x^{2}+b x+c=0$ har tv\u00e5 reella l\u00f6sningar med olika tecken, s\u00e5 g\u00e4ller att<br>(a) $b&gt;0$<br>(b) $c&gt;0$<br>(c) $b c&gt;0$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
+        "question": "Talen $b$ och $c$ \u00e4r reella, $c \\neq 0$. Om ekvationen $x^{2}+b x+c=0$ har tv\u00e5 reella l\u00f6sningar med olika tecken, s\u00e5 g\u00e4ller att<br>(a) $b&gt;0$<br>(b) $c&gt;0$<br>(c) $b c&gt;0$<br>(d) inget av (a)-(c) g\u00e4ller generellt.<br><br>",
         "answer": "d",
         "keywords": [
             "potenser",
@@ -3473,7 +3473,7 @@ const questions =
     },
     {
         "questionNum": "2011-10",
-        "question": "F\u00f6r alla reella tal $x \<br>eq 0$ g\u00e4ller att<br>(a) $\\ln |x|+\\frac{1}{\\ln |x|}=0$<br>(b) $\\ln \\left|\\frac{1}{x}\\right|+\\ln |x|=0$<br>(c) $\\ln x^{2}+2 \\ln (-x)=0$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "F\u00f6r alla reella tal $x \\neq 0$ g\u00e4ller att<br>(a) $\\ln |x|+\\frac{1}{\\ln |x|}=0$<br>(b) $\\ln \\left|\\frac{1}{x}\\right|+\\ln |x|=0$<br>(c) $\\ln x^{2}+2 \\ln (-x)=0$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "logaritmfunktioner",
@@ -3702,7 +3702,7 @@ const questions =
     },
     {
         "questionNum": "2010-2",
-        "question": "$\\mathrm{Om} U=\\frac{6}{9-x^{2}}+\\frac{1}{x-3}+\\frac{1}{x+3}$, s\u00e5 g\u00e4ller f\u00f6r alla $x \<br>eq \\pm 3$ att<br>(a) $U=0$<br>(b) $U=\\frac{2}{x+3}$<br>(c) $U=\\frac{2}{x-3}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "$\\mathrm{Om} U=\\frac{6}{9-x^{2}}+\\frac{1}{x-3}+\\frac{1}{x+3}$, s\u00e5 g\u00e4ller f\u00f6r alla $x \\neq \\pm 3$ att<br>(a) $U=0$<br>(b) $U=\\frac{2}{x+3}$<br>(c) $U=\\frac{2}{x-3}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "rationella uttryck",
@@ -3722,7 +3722,7 @@ const questions =
     },
     {
         "questionNum": "2010-4",
-        "question": "Alla l\u00f6sningar till olikheten $\\frac{1}{x}-\\frac{1}{x+1}&gt;0$ ges av<br>(a) alla reella tal $x$ s\u00e5dana att $x \<br>eq 0, x \<br>eq-1$<br>(b) alla positiva tal $x$<br>(c) alla reella tal $x$ s\u00e5dana att $x&lt;-1$<br>(d) ingen av m\u00e4ngderna (a)-(c) ger alla l\u00f6sningar. <br><br>",
+        "question": "Alla l\u00f6sningar till olikheten $\\frac{1}{x}-\\frac{1}{x+1}&gt;0$ ges av<br>(a) alla reella tal $x$ s\u00e5dana att $x \\neq 0, x \\neq-1$<br>(b) alla positiva tal $x$<br>(c) alla reella tal $x$ s\u00e5dana att $x&lt;-1$<br>(d) ingen av m\u00e4ngderna (a)-(c) ger alla l\u00f6sningar. <br><br>",
         "answer": "d",
         "keywords": [
             "olikheter",
@@ -4031,7 +4031,7 @@ const questions =
     },
     {
         "questionNum": "2009-4",
-        "question": "Olikheten $\\frac{x+5}{x-1} \\geq 0$ har samma l\u00f6sningar som olikheten<br>(a) $(x+5)(x-1) \\geq 0$<br>(b) $(x+5)(x-1)&gt;0$<br>(c) $(x+5)(x-1) \<br>eq 0$<br>(d) inget av (a)-(c).<br><br>",
+        "question": "Olikheten $\\frac{x+5}{x-1} \\geq 0$ har samma l\u00f6sningar som olikheten<br>(a) $(x+5)(x-1) \\geq 0$<br>(b) $(x+5)(x-1)&gt;0$<br>(c) $(x+5)(x-1) \\neq 0$<br>(d) inget av (a)-(c).<br><br>",
         "answer": "d",
         "keywords": [
             "olikheter",
@@ -4041,7 +4041,7 @@ const questions =
     },
     {
         "questionNum": "2009-5",
-        "question": "Olikheten $\\frac{x+5}{x-1}&gt;0$ har samma l\u00f6sningar som olikheten<br>(a) $(x+5)(x-1) \\geq 0$<br>(b) $(x+5)(x-1)&gt;0$<br>(c) $(x+5)(x-1) \<br>eq 0$<br>(d) inget av (a)-(c). <br><br>",
+        "question": "Olikheten $\\frac{x+5}{x-1}&gt;0$ har samma l\u00f6sningar som olikheten<br>(a) $(x+5)(x-1) \\geq 0$<br>(b) $(x+5)(x-1)&gt;0$<br>(c) $(x+5)(x-1) \\neq 0$<br>(d) inget av (a)-(c). <br><br>",
         "answer": "b",
         "keywords": [
             "olikheter",
@@ -4160,7 +4160,7 @@ const questions =
     },
     {
         "questionNum": "2009-17",
-        "question": "F\u00f6r alla positiva tal $a, b$ g\u00e4ller olikheten<br>(a) $a+b \\geq a b$<br>(b) $a+b \\leq a b$<br>(c) $a+b \<br>eq a b$<br>(d) ingen av olikheterna (a)-(c) g\u00e4ller f\u00f6r alla positiva tal $a, b$.<br><br>",
+        "question": "F\u00f6r alla positiva tal $a, b$ g\u00e4ller olikheten<br>(a) $a+b \\geq a b$<br>(b) $a+b \\leq a b$<br>(c) $a+b <br>\\neq a b$<br>(d) ingen av olikheterna (a)-(c) g\u00e4ller f\u00f6r alla positiva tal $a, b$.<br><br>",
         "answer": "d",
         "keywords": [
             "olikheter",
@@ -4170,7 +4170,7 @@ const questions =
     },
     {
         "questionNum": "2009-18",
-        "question": "Om $A B C$ \u00e4r en triangel med sidl\u00e4ngder $a, b, c$, d\u00e4r $a \\leq b \\leq c$, och om $R$ \u00e4r radien till cirkeln som g\u00e5r genom punkterna $A, B, C$, s\u00e5 g\u00e4ller olikheten<br>(a) $R \\geq \\frac{c}{2}$<br>(b) $R \\leq \\frac{c}{2}$<br>(c) $R \<br>eq \\frac{c}{2}$<br>(d) ingen av olikheterna (a)-(c) g\u00e4ller f\u00f6r alla trianglar.<br><br>",
+        "question": "Om $A B C$ \u00e4r en triangel med sidl\u00e4ngder $a, b, c$, d\u00e4r $a \\leq b \\leq c$, och om $R$ \u00e4r radien till cirkeln som g\u00e5r genom punkterna $A, B, C$, s\u00e5 g\u00e4ller olikheten<br>(a) $R \\geq \\frac{c}{2}$<br>(b) $R \\leq \\frac{c}{2}$<br>(c) $R \\neq \\frac{c}{2}$<br>(d) ingen av olikheterna (a)-(c) g\u00e4ller f\u00f6r alla trianglar.<br><br>",
         "answer": "a",
         "keywords": [
             "triangelsatserna",
@@ -5466,7 +5466,7 @@ const questions =
     {
         "questionNum": "f2021-15",
         "question": "I energipolitiska diskussioner n\u00e4mns ofta enheten kWh. Uttryck $1 \\mathrm{kWh}$ i SI-enheter. ",
-        "answer": "$\\quad 1 \\mathrm{kWh}=6 \\mathrm{M}$",
+        "answer": "$\\quad 1 \\mathrm{kWh}=3.6MJ \\mathrm{M}$",
         "keywords": [
             "energi",
             "enheter",
@@ -6980,7 +6980,7 @@ const questions =
     },
     {
         "questionNum": "f2012-7",
-        "question": "Tv\u00e5 bollar befinner sig ursprungligen p\u00e5 samma h\u00f6jd. Den ena sl\u00e4pps utan begynnelsehastighet, medan den andra samtidigt ges en fart $v_{0} \<br>eq 0$ upp\u00e5t. D\u00e4refter r\u00f6r sig bollarna endast under inverkan av tyngdkraften (luftmotst\u00e5ndet \u00e4r f\u00f6rsumbart). Hur f\u00f6r\u00e4ndras h\u00f6jdskillnaden mellan bollarna med tiden?<br>A. Den \u00e4r konstant<br>B. Den \u00f6kar linj\u00e4rt med tiden<br>C. Den \u00f6kar kvadratiskt med tiden<br>D. Den \u00f6kar inledningsvis, men n\u00e4rmar sig ett konstant v\u00e4rde f\u00f6r stora tider",
+        "question": "Tv\u00e5 bollar befinner sig ursprungligen p\u00e5 samma h\u00f6jd. Den ena sl\u00e4pps utan begynnelsehastighet, medan den andra samtidigt ges en fart $v_{0} \\neq 0$ upp\u00e5t. D\u00e4refter r\u00f6r sig bollarna endast under inverkan av tyngdkraften (luftmotst\u00e5ndet \u00e4r f\u00f6rsumbart). Hur f\u00f6r\u00e4ndras h\u00f6jdskillnaden mellan bollarna med tiden?<br>A. Den \u00e4r konstant<br>B. Den \u00f6kar linj\u00e4rt med tiden<br>C. Den \u00f6kar kvadratiskt med tiden<br>D. Den \u00f6kar inledningsvis, men n\u00e4rmar sig ett konstant v\u00e4rde f\u00f6r stora tider",
         "answer": "B",
         "keywords": [
             "gravitationskraft",
@@ -7498,16 +7498,6 @@ const questions =
         ]
     },
     {
-        "questionNum": "f2010-19",
-        "question": "En ljusstr\u00e5le r\u00f6r sig i ett medium (plexiglas) med brytningsindex 1.5 och n\u00e5r gr\u00e4nsytan mot luft. Skissera de reflekterade och transmitterade str\u00e5larna f\u00f6r de olika infallsvinklarna i figuren! <br><br>img",
-        "answer": "<img class='mafy_img' src='https://i.imgur.com/iNoWGU0.png'>",
-        "keywords": [
-            "ljusbrytning",
-            "reflektion",
-            "optik"
-        ]
-    },
-    {
         "questionNum": "f2010-20",
         "question": "Tv\u00e5 barn sitter p\u00e5 var sin sida av en gungbr\u00e4da. Det ena barnet (till v\u00e4nster) v\u00e4ger $40 \\mathrm{~kg}$, och det andra (till h\u00f6ger) 20 kg. B\u00e5da sitter en meter fr\u00e5n gungbr\u00e4dans upph\u00e4ngning. Gungbr\u00e4dan \u00e4r mycket l\u00e4ttare<br><br><img class='mafy_img' src='https://cdn.mathpix.com/cropped/2023_05_29_b4ca73f60e40d912e82ag-6.jpg?height=223&width=766&top_left_y=1139&top_left_x=999'><br><br>\u00e4n barnen, och dess upph\u00e4ngning s\u00e5dan att den roterar kring upph\u00e4ngningspunkten med mycket liten (f\u00f6rsumbar) friktion. En f\u00f6r\u00e4lder h\u00e5ller fr\u00e5n b\u00f6rjan i br\u00e4dan och hindrar den fr\u00e5n att tippa \u00f6ver \u00e5t det tyngre barnets sida. Sedan sl\u00e4pper f\u00f6r\u00e4ldern gungbr\u00e4dan. Hur stor \u00e4r kraften p\u00e5 gungbr\u00e4dan fr\u00e5n upph\u00e4ngningsanordningen alldeles efter det att f\u00f6r\u00e4ldern sl\u00e4ppt taget? (Ledning: eftersom sj\u00e4lva br\u00e4dans massa approximeras med noll kan den anses vara i j\u00e4mvikt.)<br>",
         "answer": "Vi fril\u00e4gger de olika kropparna, och inf\u00f6r beteckningar f\u00f6r krafterna enligt figuren.<br><br>img<br><br>Den s\u00f6kta kraften \u00e4r $F$. Kraft- och momentj\u00e4mvikt f\u00f6r gungbr\u00e4dan ger $G=H$ och $F=2 G$. Den tyngre kroppens acceleration ned\u00e5t kommer att vara lika stor som den l\u00e4ttare kroppens acceleration upp\u00e5t (eftersom de befinner sig p\u00e5 samma avst\u00e5nd fr\u00e5n upph\u00e4ngningspunkten). Vi kallar denna acceleration $a$. D\u00e5 g\u00e4ller allts\u00e5:<br>$$<br>\\left\\{\\begin{array}{c}<br>m a=H-m g=\\frac{F}{2}-m g \\\\<br>M a=M g-G=M g-\\frac{F}{2}<br>\\end{array}\\right.<br>$$<br>dvs. $a=\\frac{F}{2 m}-g=g-\\frac{F}{2 M}$, varur kraften $F$ kan l\u00f6sas:<br>$$<br>F=\\frac{4 m M g}{m+M} \\approx 52 \\mathrm{kN}<br>$$<br>Svaret b\u00f6r kontrolleras m.a.p. dimension. Man kan ocks\u00e5 se vad som h\u00e4nder i n\u00e5got specialfall. Om en av kropparna har massan 0 blir kraften 0, vilket \u00e4r naturligt - den andra kroppen \u00e4r d\u00e5 $\\mathrm{i}$ fritt fall. Om kropparna har samma massa $m$ blir kraften $2 m g$ och accelerationen f\u00f6rst\u00e5s 0 .",
@@ -7869,7 +7859,7 @@ const questions =
     {
         "questionNum": "f2008-17",
         "question": "En person cyklar $1000 \\mathrm{~m}$ med hastigheten $15.0 \\mathrm{~km} / \\mathrm{h}$, och sedan $1000 \\mathrm{~m}$ med hastigheten 30.0 $\\mathrm{km} / \\mathrm{h}$. Hur stor blir medelhastigheten?",
-        "answer": "$0 \\mathrm{~km} / \\mathrm{h}$",
+        "answer": "$20 \\mathrm{~km} / \\mathrm{h}$",
         "keywords": [
             "r\u00c3\u00b6relsem\u00c3\u00a4ngd",
             "hastighet",

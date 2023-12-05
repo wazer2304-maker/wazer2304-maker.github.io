@@ -6,7 +6,7 @@ const argument_acceptors = {
 	"help": [],
 	"link": ["url", "links"],
 	"name": ["set"],
-	"mafy": ["questions", "tpq", "help", "todo"],
+	"mafy": ["questions", "tpq", "help"],
 	"clear": [],
     "write": []
 }
@@ -52,13 +52,7 @@ if (command == "console") {
         clear_console();
     }
     if (command_args["reset"]) {
-        document.getElementById("output")
-            .style.color = "lightblue";
-        document.getElementById("output")
-            .style.background = "none";
-        document.getElementById("output")
-            .style.fontSize = "17px";
-        create_line("Console reset.", true, 0);
+        window.location.reload();
     }
 }
 
@@ -123,10 +117,6 @@ if (command == "link") {
     
     /* mafy command */
     if (command == "mafy") {
-        if (command_args["todo"]) {
-            create_line("fysik 2, trigonometri, ekvationer, icke reellt, geo summa ", true, 0);
-            return;
-        }
         if (command_args["questions"]) {
             number_questions = command_args["questions"];
         } else {
@@ -158,16 +148,16 @@ if (command == "link") {
         clear_console_quick();
         
         create_line("'#' används för kommentarer/beräkningar, <br>-stop för att avsluta omgången, <br>-r för att markera rätt och <br>-f för att markera fel.", true, 0, "larger");
-        create_line("<br>Lycka till!<br><br>", true, 0, "larger correct");
+        create_line("<br>Lycka till!<br><br>", true, 0, "larger");
         
         setTimeout(function() {
-            create_line(" 3 !::", true, 0, "red");
+            create_line(" 3 ", true, 0);
         }, 3000);
         setTimeout(function() {
-            create_line(" 2 !!:", true, 0, "yellow");
+            create_line(" 2 ", true, 0);
         }, 4000);
         setTimeout(function() {
-            create_line(" 1 !!!", true, 0, "green");
+            create_line(" 1 ", true, 0);
         }, 5000);
 
         setTimeout(function() {
@@ -258,11 +248,12 @@ function mafy_capture(value) {
         }
         return;
     }
+    create_line("<br><br>Tryck på enter för att fortsätta.", true, 0, "larger thicker");
+    create_line("Verifiera: https://www.matematik-och-fysikprovet.se/tidigare-prov/", true, 0, "thicker");
+    create_line("Rätt: " + document.correct + " Fel: " + document.wrong + " Totalt: " + document.total, true, 0, "thicker");
+    document.mafy_revealed = true;
     create_line("<br><br>Ditt svar: " + value, true, 0, "answer_larger");
     create_line("Rätt svar: " + answer, true, 0, "answer_larger correct");
-    create_line("<br><br>Tryck på enter för att fortsätta.", true, 0, "larger");
-    create_line("Rätt: " + document.correct + " Fel: " + document.wrong + " Totalt: " + document.total, true, 0);
-    document.mafy_revealed = true;
     reload_math();
 }
 
