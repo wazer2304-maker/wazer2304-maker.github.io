@@ -192,16 +192,6 @@ if (command == "link") {
 
 
 
-
-function mafy_img_parse(question) {
-    if (question.includes("![](")) {
-        url = question.split("![](")[1].split(")")[0];
-        question = question.split("![](")[0];
-        append(img(url));
-    }
-    return question;
-}
-
 function mafy_question() {
     clear_console_quick();
     document.capture=true;
@@ -216,7 +206,6 @@ function mafy_question() {
     answer = m["answer"];
     
     question = m["question"];
-    question = mafy_img_parse(question);
     
     create_line("Fråga " + questionNum + ".", true, 0);
     create_line(question, true, 0, "larger question");
@@ -269,7 +258,6 @@ function mafy_capture(value) {
         }
         return;
     }
-    answer = mafy_img_parse(answer);
     create_line("<br><br>Ditt svar: " + value, true, 0, "answer_larger");
     create_line("Rätt svar: " + answer, true, 0, "answer_larger correct");
     create_line("<br><br>Tryck på enter för att fortsätta.", true, 0, "larger");

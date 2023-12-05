@@ -5,7 +5,7 @@ window.onload = function () { // when the page loads
 		var ev = e || event;
 		if (ev.keyCode == 13) {
 			if (document.capture==false) {
-				interpret(input.value);
+				interpret(input.value.toLowerCase());
 			} else {
 				captured_input(input.value);
 			}
@@ -13,13 +13,6 @@ window.onload = function () { // when the page loads
 		}
 	}
 };
-
-function img(url) {
-    var image = document.createElement("img");
-    image.src = url;
-    image.className = "mafy_img";
-    return image;
-}
 
 function append(element) {
     document.getElementById("output").appendChild(element);
@@ -89,6 +82,26 @@ function captured_input(value) {
 			write_capture(value);
 		}
 	}
+}
+
+function occurrences(string, subString, allowOverlapping) {
+
+    string += "";
+    subString += "";
+    if (subString.length <= 0) return (string.length + 1);
+
+    var n = 0,
+        pos = 0,
+        step = allowOverlapping ? 1 : subString.length;
+
+    while (true) {
+        pos = string.indexOf(subString, pos);
+        if (pos >= 0) {
+            ++n;
+            pos += step;
+        } else break;
+    }
+    return n;
 }
 
 function get_args(data) { // returns a json object of the arguments
