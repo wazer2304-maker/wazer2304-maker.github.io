@@ -8,7 +8,8 @@ const argument_acceptors = {
 	"name": ["set"],
 	"mafy": ["questions", "tpq", "help"],
 	"clear": [],
-    "write": []
+    "write": [],
+    "labb": []
 }
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
@@ -17,7 +18,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy", "write"];
+command_exceptions = ["help", "clear", "mafy", "write", "labb"];
 
 function run(command, command_args) {
     
@@ -68,6 +69,10 @@ if (command == "clear") {
     clear_console();
 }
 
+if (command == "labb") {
+    window.open("https://sharppointed.com/labb.html");
+    create_line("Opened Labb.", true, 0);
+}
 
 /* Name command */
 if (command == "name") {
