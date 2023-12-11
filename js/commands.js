@@ -178,7 +178,7 @@ if (command == "link") {
         document.capture = true;
         document.writecapture = true;
         clear_console_quick();
-        create_line("Use '-stop' to escape.", true, 0, "mini_comment");
+        create_line("Use '-stop' to escape. Use '-copy' to copy contents.", true, 0, "mini_comment");
     }
 
 } /* --------- End of run() ------------- */
@@ -282,6 +282,21 @@ function mafy_time(time){
 }
 
 function write_capture(value) {
+    if (value == "-copy") {
+        lines = document.getElementById("output")
+		.childNodes.length;
+        construct = "";
+        for(i=1;i<lines;i++) {
+            line_content = document.getElementById("output").childNodes[i].textContent + "\n";
+            construct += line_content;
+        }
+
+        navigator.clipboard.writeText(construct);
+        alert("Copied");
+        
+
+        return
+    }
     if (value[0] == "#") {
         value = "$" + value.substring(1) + "$";
     }
