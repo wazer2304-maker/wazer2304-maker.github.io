@@ -225,6 +225,7 @@ function default_arg(command) {
 }
 
 function default_help() {
+	create_line("&nbsp; Command /argument &lt;content&gt; ", true, 0, "mini_comment");
 	for (var i = 0; i < Object.keys(argument_acceptors).length; i++) {
 		command = Object.keys(argument_acceptors)[i];
 		args, length = available_arguments(command);

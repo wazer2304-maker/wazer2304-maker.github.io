@@ -281,6 +281,8 @@ function mafy_time(time){
     }, 1000);
 }
 
+/*ADD: change text: arrow up -> get content of last,then upper line, 
+        -> enter with that -> change content, same id*/
 function write_capture(value) {
     if (value == "-copy") {
         lines = document.getElementById("output")
@@ -290,11 +292,8 @@ function write_capture(value) {
             line_content = document.getElementById("output").childNodes[i].textContent + "\n";
             construct += line_content;
         }
-
         navigator.clipboard.writeText(construct);
         alert("Copied");
-        
-
         return
     }
     if (value[0] == "#") {
