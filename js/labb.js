@@ -96,7 +96,7 @@ function a() {
     text += "<br><br><br><h1>Diskussion</h1>\n";
 
     if(!(inputs[17].value == "")){
-    text += "<h2>Besvaring</h2>\n";
+    text += "<h2>Besvarande</h2>\n";
     text += inputs[17].value;
 }
     
