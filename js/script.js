@@ -214,7 +214,7 @@ function available_arguments(command) { // returns the available argument/s
 		len = 0;
 	} else {
 		len = args.length;
-		args = format + " &gt; /" + args.join(format+" &gt; /") + " "; 
+		args = format + "  /" + args.join(format+"  /") + " "; 
 	}
 	return args, ("(" + len + ")");
 }
