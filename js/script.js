@@ -221,15 +221,14 @@ function available_arguments(command) { // returns the available argument/s
 
 function default_arg(command) {
 	args, length = available_arguments(command);
-	create_line("Available arguments: " + length + args, true, 0);
+	create_line("Available arguments: " + length + args, true, 0, "list_side");
 }
 
 function default_help() {
-	create_line("Available commands: ", true, 0);
 	for (var i = 0; i < Object.keys(argument_acceptors).length; i++) {
 		command = Object.keys(argument_acceptors)[i];
 		args, length = available_arguments(command);
-		create_line("  " + command.toUpperCase() + " " + length + args, true, 0);
+		create_line("  " + command.toUpperCase() + " " + length + args, true, 0, "list_side");
 	}
 }
 
