@@ -1,4 +1,4 @@
-const wolfram_api_url = "https://wolfram.lilquaily.repl.co/"
+const wolfram_api_url = "https://wolfram.lilquaily.repl.co/" /*Url of instance: server.py*/ 
 
 window.onload = function () { // when the page loads
 	document.capture = false;
