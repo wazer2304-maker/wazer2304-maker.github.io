@@ -9,7 +9,8 @@ Index.html is main file. Links others.
 * Make site module / plugin based.
 
 * Cursorline. Make up-arrow get text from above line/s to input field.
-    -> * Edit & remove lines in write.
+
+* Edit & remove lines in write.
 
 * Game.
 
