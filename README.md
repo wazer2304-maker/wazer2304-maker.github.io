@@ -1,9 +1,9 @@
-### Req
+## Required
 An instance of server.py needs to run for wolfram api (write command). 
 
 Index.html is main file. Links others. 
 
-## Todo
+### Todo
 * Fix compute_line for write. Wolfram Alpha API. Requires functioning server.
 
 * Make site module / plugin based.
@@ -18,5 +18,5 @@ Index.html is main file. Links others.
 * Limits for args, args should never be empty for certain commands. 
 
 
-## Fix
+### Fix
 * Remove text-decoration for "None" in command help. 
