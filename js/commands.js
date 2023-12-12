@@ -9,7 +9,8 @@ const argument_acceptors = {
 	"mafy": ["questions", "tpq", "help"],
 	"clear": [],
     "write": [],
-    "labb": []
+    "labb": [],
+    "mira": []
 }
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
@@ -18,7 +19,7 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy", "write", "labb"];
+command_exceptions = ["help", "clear", "mafy", "write", "labb", "mira"];
 
 function run(command, command_args) {
     
@@ -83,7 +84,11 @@ if (command == "name") {
     }
 }
 
-
+if (command == "mira") {
+    clear_console_quick();
+    create_line("Jag älskar Mira. ", true, 0, "larger");
+    create_line("<3 <3 <3", true, 0, "larger red");
+}
 
 
 /* Link command */

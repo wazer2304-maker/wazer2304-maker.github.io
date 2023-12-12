@@ -188,3 +188,7 @@ br {
 .thicker {
     font-weight: 600;
 }
+
+.user_output {
+    margin-top: 10px;
+}

@@ -7,7 +7,6 @@ Object.defineProperty(String.prototype, 'cap', {
 
 
 function a() {
- l = document.getElementById('la');
     const inputs = document.querySelectorAll('input');
     const textareas = document.querySelectorAll('textarea');
     let text = '';
@@ -130,6 +129,12 @@ function a() {
     text += "<br><br><br><h1>Referenser & Källor</h1>\n"; 
     text += textareas[17].value;
 }
-    
-    l.innerHTML = text;
+    newWindow = window.open("", "Compiler", "" );
+    doc = newWindow.document;
+    doc.open("text/html","replace");
+    doc.writeln('<!DOCTYPE HTML>');
+    doc.writeln("<html>");
+    doc.writeln(text);
+    doc.writeln("</html>");
+    doc.close();
 }

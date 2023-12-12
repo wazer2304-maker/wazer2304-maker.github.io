@@ -3,6 +3,9 @@ const wolfram_api_url = "https://wolfram.lilquaily.repl.co/" /*Url of instance: 
 window.onload = function () { // when the page loads
 	document.capture = false;
 	input = document.getElementById("input");
+	setTimeout(function () {
+		console_welcome();
+	}, 1000);
 	input.onkeyup = function (e) {
 		var ev = e || event;
 		if (ev.keyCode == 13) {
@@ -15,6 +18,11 @@ window.onload = function () { // when the page loads
 		}
 	}
 };
+
+function console_welcome() {
+	create_line("Welcome to the console. Type 'help' for available commands.", true, 0);
+	input.focus();
+}
 
 function append(element) {
     document.getElementById("output").appendChild(element);
@@ -41,6 +49,7 @@ function create_line(text, system, option, class_name) {
 	}
 	else {
 		text = user + "&gt; " + text;
+		line.className = line.className + " user_output";
 	}
 	lines = document.getElementById("output")
 		.childNodes.length;
@@ -230,7 +239,7 @@ function default_help() {
 		args, length = available_arguments(command);
 		create_line("  " + command.toUpperCase() + " " + length + args, true, 0, "list_side");
 	}
-	create_line("&nbsp; 'Command /argument &lt;content&gt;' ", true, 0, "mini_comment");
+	create_line("&nbsp; (Use 'Command /argument &lt;content&gt;') ", true, 0, "mini_comment");
 }
 
 function execute(command, command_args) { // executes the command
