@@ -1,3 +1,23 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Code Pro', monospace;
+}
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 body {
     background-color: #191b1e;
     color: white;
@@ -14,6 +34,16 @@ input {
     margin-top: 30px;
     border:2px solid rgb(81, 81, 81);
     background-color: #191b1e;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 30px;
+    border:2px solid rgb(81, 81, 81);
+    background-color: #191b1e;
+    color: white;
+    height: 200px;
 }
 
 h1 {
@@ -39,4 +69,29 @@ button {
 
 .first_page {
     page-break-after: always;
+}
+
+.cont_mall {
+    width: 20%;
+    height: 1680px;
+    display: grid;
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cont_mall * {
+    border: 1px solid white;
+}
+
+.roof {
+    border-top: 3px solid rgb(117, 117, 117);
+    padding: 30px;
+}
+
+.cont_mall *:nth-child(4n), .cont_mall *:nth-child(4n-1) {
+    color: #eacf64;
+    font-weight:900;
+    text-decoration: underline;
 }
