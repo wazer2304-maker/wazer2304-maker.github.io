@@ -39,7 +39,9 @@ window.onload = function () { // when the page loads
 };
 
 function store_input(input) {
-	inputhistory.unshift(input);
+	if (inputhistory[0] != input && input != "") {
+		inputhistory.unshift(input);
+	}
 }
 
 function console_welcome() {
@@ -239,18 +241,21 @@ function interpret(input) { // interprets the input
 }
 
 function available_arguments(command) { // returns the available argument/s
-	descriptions = argument_descriptions[command];
-	args = argument_acceptors[command];
+	let descriptions = argument_descriptions[command];
+	args = [].concat(argument_acceptors[command]);
 	format = "<br>&nbsp;";
+	
 	if (args[0] == null) {
 		args = format + " <span class='dehance'>(None)</span>";
 		len = 0;
 	} else {
 		len = args.length;
 		for (var i = 0; i < args.length; i++) {
+			console.log(args[i]);
 			args[i] = "<br>&nbsp;&nbsp;/" + args[i] + "   <span class='mini_comment'>&lt;" + descriptions[args[i]] + "&gt;</span>";
 		}
 	}
+	
 	return args, ("(" + len + ")");
 }
 
