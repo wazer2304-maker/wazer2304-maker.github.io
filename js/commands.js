@@ -124,7 +124,6 @@ if (command == "labb") {
 if (command == "name") {
     if (command_args["set"]) {
         user = command_args["set"];
-        clear_console_quick();
         create_line("Name changed to '" + user + "'", true, 0);
     }
 }
@@ -133,6 +132,27 @@ if (command == "mira") {
     clear_console_quick();
     create_line("Jag älskar Mira. ", true, 0, "larger");
     create_line("<3 <3 <3", true, 0, "larger red");
+    /*delay*/
+    setTimeout(function() {
+    clear_console_quick();
+    create_line("Jag älskar Mira. ", true, 0, "larger red");
+    create_line("<3 <3 <3", true, 0, "larger red");
+    }, 300);
+    setTimeout(function() {
+    clear_console_quick();
+    create_line("Jag älskar Mira. ", true, 0, "larger");
+    create_line("<3 <3 <3", true, 0, "larger red");
+    }, 600);
+    setTimeout(function() {
+    clear_console_quick();
+    create_line("Jag älskar Mira. ", true, 0, "larger red");
+    create_line("<3 <3 <3", true, 0, "larger red");
+    }, 900);
+    setTimeout(function() {
+    clear_console_quick();
+    create_line("Jag älskar Mira. ", true, 0, "larger");
+    create_line("<3 <3 <3", true, 0, "larger red");
+    }, 1200);
 }
 
 
@@ -161,9 +181,9 @@ if (command == "link") {
     }
 
     if (command_args["links"]) {
-            create_line("Available links: ", true, 0);
+            create_line("Available links: ", true, 0, "list_side");
             for (var key in links) {
-                create_line("&nbsp; > " + key, true, 0);
+                create_line("&nbsp; * " + key, true, 0, "list_side");
             }
     }
 }
