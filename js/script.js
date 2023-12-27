@@ -34,9 +34,26 @@ window.onload = function () { // when the page loads
 				input.value = inputhistory[arrow_line];
 			}
 		}
+		
+		/*Delete, backspace*/
+		if (ev.keyCode == 8) {
+				if (ev.shiftKey) {
+				var line_n = document.getElementById("output").childNodes.length-1;
+				if (line_n <= -1) { return }
+				var line = document.getElementById("line" + line_n);
+				highlight(line);
+				setTimeout(function() {
+					line.remove();
+				}, 200);
+				}
+			
+		}}
 
-	}
 };
+
+function highlight(element) {
+	element.style.backgroundColor = "#ffffff";
+}
 
 function store_input(input) {
 	if (inputhistory[0] != input && input != "") {
@@ -49,7 +66,7 @@ function clear_inputhistory() {
 }
 
 function console_welcome() {
-	create_line("Welcome to the console. Type 'help' for available commands.", true, 0);
+	create_line("Welcome to the console! <br> &nbsp;- Type 'help' for available commands. <br> &nbsp;- Use up and down arrow keys to copy lines. (↑/↓) <br> &nbsp;- Use [shift] + [backspace] to delete the above line. ", true, 0);
 	input.focus();
 }
 
