@@ -13,6 +13,36 @@ const argument_acceptors = {
     "labb": [],
     "mira": []
 }
+
+const argument_descriptions = {
+    "console": {
+        "color": "color",
+        "size": "100%",
+        "clear": "*",
+        "reset": "*"
+    },
+    "help": {},
+    "link": {
+        "url": "abc.com",
+        "links": "*"
+    },
+    "name": {
+        "set": "name"
+    },
+    "mafy": {
+        "questions": "1-999",
+        "tpq": "1-999  - Minutes per question",
+        "help": "*"
+    },
+    "clear": {},
+    "write": {},
+    "lopenzo": {
+        "lopenzo": "text"
+    },
+    "labb": {},
+    "mira": {}
+}
+
 const links = {
 	"saits": "https://saits-vaxjo.se.ist.com/student/",
 	"ist": "https://vaxjo-student-learn.se.ist.com/index.html#/app/review",
@@ -30,10 +60,10 @@ for (var key in argument_acceptors) {
 function run(command, command_args) {
     
     if (!command_exceptions.includes(command)) {
-    if (Object.keys(command_args)[0] == null) {
-        default_arg(command);
-        return
-    }
+        if (Object.keys(command_args)[0] == null) {
+            default_arg(command);
+            return
+        }
     } 
 
 
@@ -87,7 +117,7 @@ if (command == "clear") {
 
 if (command == "labb") {
     window.open("https://sharppointed.com/labb.html");
-    create_line("Opened Labb.", true, 0);
+    create_line("Opening labb ...", true, 0);
 }
 
 /* Name command */

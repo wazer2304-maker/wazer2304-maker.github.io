@@ -11,8 +11,8 @@ window.onload = function () { // when the page loads
 	input.onkeyup = function (e) {
 		var ev = e || event;
 		if (ev.keyCode == 13) {
+			store_input(input.value);
 			if (document.capture==false) {
-				store_input(input.value);
 				interpret(input.value);
 			} else {
 				captured_input(input.value);
@@ -40,7 +40,6 @@ window.onload = function () { // when the page loads
 
 function store_input(input) {
 	inputhistory.unshift(input);
-	console.log(inputhistory);
 }
 
 function console_welcome() {
@@ -240,6 +239,7 @@ function interpret(input) { // interprets the input
 }
 
 function available_arguments(command) { // returns the available argument/s
+	descriptions = argument_descriptions[command];
 	args = argument_acceptors[command];
 	format = "<br>&nbsp;";
 	if (args[0] == null) {
@@ -247,7 +247,9 @@ function available_arguments(command) { // returns the available argument/s
 		len = 0;
 	} else {
 		len = args.length;
-		args = format + "  /" + args.join(format+"  /") + " "; 
+		for (var i = 0; i < args.length; i++) {
+			args[i] = "<br>&nbsp;&nbsp;/" + args[i] + "   <span class='mini_comment'>&lt;" + descriptions[args[i]] + "&gt;</span>";
+		}
 	}
 	return args, ("(" + len + ")");
 }
@@ -263,7 +265,7 @@ function default_help() {
 		args, length = available_arguments(command);
 		create_line("  " + command.toUpperCase() + " " + length + args, true, 0, "list_side");
 	}
-	create_line("&nbsp; (Use 'Command /argument &lt;content&gt;') ", true, 0, "mini_comment");
+	create_line("&nbsp; (Use 'Command /argument &lt;content&gt;', &nbsp; <*> needs no arguments.) ", true, 0, "mini_comment");
 }
 
 function execute(command, command_args) { // executes the command
