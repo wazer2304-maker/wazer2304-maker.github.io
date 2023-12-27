@@ -1,4 +1,6 @@
 const wolfram_api_url = "https://wolfram.lilquaily.repl.co/" /*Url of instance: server.py*/ 
+var inputhistory = [];
+var arrow_line = 0;
 
 window.onload = function () { // when the page loads
 	document.capture = false;
@@ -10,14 +12,36 @@ window.onload = function () { // when the page loads
 		var ev = e || event;
 		if (ev.keyCode == 13) {
 			if (document.capture==false) {
+				store_input(input.value);
 				interpret(input.value);
 			} else {
 				captured_input(input.value);
 			}
 			input.value = "";
+			arrow_line = 0;
 		}
+		
+		/*Arrow up and down for text_line*/
+		if (ev.keyCode == 38) {
+			if (arrow_line < inputhistory.length) {
+				input.value = inputhistory[arrow_line];
+				arrow_line += 1;
+			}
+		}
+		if (ev.keyCode == 40) {
+			if (arrow_line > 0) {
+				arrow_line -= 1;
+				input.value = inputhistory[arrow_line];
+			}
+		}
+
 	}
 };
+
+function store_input(input) {
+	inputhistory.unshift(input);
+	console.log(inputhistory);
+}
 
 function console_welcome() {
 	create_line("Welcome to the console. Type 'help' for available commands.", true, 0);
