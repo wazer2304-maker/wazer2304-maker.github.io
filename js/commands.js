@@ -9,6 +9,7 @@ const argument_acceptors = {
 	"mafy": ["questions", "tpq", "help"],
 	"clear": [],
     "write": [],
+    "lopenzo": ["lopenzo"],
     "labb": [],
     "mira": []
 }
@@ -19,7 +20,12 @@ const links = {
 	"mat": "https://mpi.mashie.com/public/app/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240"
 }
 
-command_exceptions = ["help", "clear", "mafy", "write", "labb", "mira"];
+command_exceptions = [];
+for (var key in argument_acceptors) {
+    if (argument_acceptors[key].length == 0) {
+        command_exceptions.push(key);
+    }
+}
 
 function run(command, command_args) {
     
@@ -53,6 +59,20 @@ if (command == "console") {
     }
 }
 
+if (command == "lopenzo") {
+    split = command_args["lopenzo"];
+    construct="";
+    for (i = 0; i < split.length; i++) {
+        construct += split[i] + " lopenzo";
+        if (i%2 == 0) {
+            construct+= "! ";
+        }
+        else {
+            construct+= "? ";
+        }
+    }
+    create_line(construct, true, 0, "larger");
+}
 
 
 /* Help command */
