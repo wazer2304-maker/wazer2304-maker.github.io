@@ -2,7 +2,7 @@ var user = "user";
 var capture = false;
 
 const argument_acceptors = {
-	"console": ["color", "background", "size", "clear", "reset"],
+	"console": ["color", "size", "clear", "reset"],
 	"help": [],
 	"link": ["url", "links"],
 	"name": ["set"],
@@ -39,11 +39,6 @@ if (command == "console") {
         document.getElementById("output")
             .style.color = command_args["color"];
         create_line("Color changed to " + command_args["color"], true, 0);
-    }
-    if (command_args["background"]) {
-        document.getElementById("output")
-            .style.background = command_args["background"];
-        create_line("Background changed to " + command_args["background"], true, 0);
     }
     if (command_args["size"]) {
         document.getElementById("output")
