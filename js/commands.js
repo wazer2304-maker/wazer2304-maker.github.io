@@ -124,7 +124,7 @@ if (command == "labb") {
 if (command == "name") {
     if (command_args["set"]) {
         user = command_args["set"];
-        create_line("Name changed to '" + user + "'", true, 0);
+        create_line("You are now '" + user + "'", true, 0);
     }
 }
 
@@ -245,6 +245,7 @@ if (command == "link") {
 
 
     if (command == "write") {
+        clear_inputhistory();
         document.capture = true;
         document.writecapture = true;
         clear_console_quick();

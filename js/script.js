@@ -44,6 +44,10 @@ function store_input(input) {
 	}
 }
 
+function clear_inputhistory() {
+	inputhistory = [];
+}
+
 function console_welcome() {
 	create_line("Welcome to the console. Type 'help' for available commands.", true, 0);
 	input.focus();
@@ -127,6 +131,7 @@ function reload_math() {
 
 function captured_input(value) {
 	if (value == "-stop") {
+		clear_inputhistory();
 		document.capture = false;
 		document.writecapture = false;
 		document.mafycapture = false;
