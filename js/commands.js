@@ -11,7 +11,8 @@ const argument_acceptors = {
     "write": [],
     "lopenzo": ["lopenzo"],
     "labb": [],
-    "mira": []
+    "mira": [],
+    "whoami": []
 }
 
 const argument_descriptions = {
@@ -40,7 +41,8 @@ const argument_descriptions = {
         "lopenzo": "text"
     },
     "labb": {},
-    "mira": {}
+    "mira": {},
+    "whoami": {}
 }
 
 const links = {
@@ -117,14 +119,21 @@ if (command == "clear") {
 
 if (command == "labb") {
     window.open("https://sharppointed.com/labb.html");
-    create_line("Opening labb ...", true, 0);
+    create_line("Opening /labb ...", true, 0);
+}
+
+if (command == "whoami") {
+    create_line("You are " + user + ".", true, 0, "list_side");
 }
 
 /* Name command */
 if (command == "name") {
     if (command_args["set"]) {
         user = command_args["set"];
-        create_line("You are now '" + user + "'", true, 0);
+        for (i = 0; i < document.getElementsByClassName("username").length; i++) {
+            document.getElementsByClassName("username")[i].textContent = user + "> ";
+        }
+        create_line("You are now '" + user + "'.", true, 0, "list_side");
     }
 }
 
@@ -242,7 +251,7 @@ if (command == "link") {
 
     
     }
-
+    
 
     if (command == "write") {
         clear_inputhistory();

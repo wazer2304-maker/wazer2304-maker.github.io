@@ -81,6 +81,7 @@ function scroll_to_latest(lines) {
 
 function create_line(text, system, option, class_name) {
 	var line = document.createElement("p");
+
 	if (option == 2) {
 		text = '<i class="fa-solid fa-rectangle-xmark"></i>' + " ERROR: " + text;
 		line.className = "console_error";
@@ -94,9 +95,10 @@ function create_line(text, system, option, class_name) {
 		line.className = line.className + " console_output";
 	}
 	else {
-		text = user + "&gt; " + text;
+		text = "<span class='username'>" + user + "&gt; </span>" + text;
 		line.className = line.className + " user_output";
 	}
+
 	lines = document.getElementById("output")
 		.childNodes.length;
 	line.id = "line" + lines;
@@ -273,7 +275,6 @@ function available_arguments(command) { // returns the available argument/s
 	} else {
 		len = args.length;
 		for (var i = 0; i < args.length; i++) {
-			console.log(args[i]);
 			args[i] = "<br>&nbsp;&nbsp;/" + args[i] + "   <span class='mini_comment'>&lt;" + descriptions[args[i]] + "&gt;</span>";
 		}
 	}
@@ -292,7 +293,7 @@ function default_help() {
 		args, length = available_arguments(command);
 		create_line("  " + command.toUpperCase() + " " + length + args, true, 0, "list_side");
 	}
-	create_line("&nbsp; (Use 'Command /argument &lt;content&gt;', &nbsp; <*> needs no arguments.) ", true, 0, "mini_comment");
+	create_line("&nbsp; (Use 'Command /argument &lt;content&gt;',&nbsp;<*> requires no content.) ", true, 0, "mini_comment");
 }
 
 function execute(command, command_args) { // executes the command

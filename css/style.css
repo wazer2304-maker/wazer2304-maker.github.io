@@ -89,6 +89,10 @@ console input:focus {
     border-left: 3px solid white;
 }
 
+.list_side:nth-of-type(2n+1) {
+    border-left: 3px solid rgb(206, 206, 206);
+}
+
 .console_error {
     color: rgb(210, 0, 0);
 }
@@ -190,5 +194,8 @@ br {
 }
 
 .user_output {
-    margin-top: 30px;
+    margin-top: 20px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    text-shadow:rgb(231, 231, 211) 1px 0px 1px;
 }
