@@ -1,5 +1,6 @@
 var user = "user";
 var capture = false;
+var write_store = [];
 
 const argument_acceptors = {
 	"console": ["color", "size", "clear", "reset"],
@@ -258,7 +259,7 @@ if (command == "link") {
         document.capture = true;
         document.writecapture = true;
         clear_console_quick();
-        create_line("Use '-stop' to escape. Use '-copy' to copy contents.", true, 0, "mini_comment");
+        create_line("Use '-stop' to escape. Use '-copy' to copy contents. Use 'set x=y' to store and evaluate numbers. Use 'get x' to get a variables value. ", true, 0, "mini_comment");
     }
 
 } /* --------- End of run() ------------- */
@@ -364,6 +365,27 @@ function mafy_time(time){
 /*ADD: change text: arrow up -> get content of last,then upper line, 
         -> enter with that -> change content, same id*/
 function write_capture(value) {
+    compact = value.replaceAll(" ", "").replace("^", "**").replace("--", "+");
+
+    if (compact.substring(0,3) == "set" && compact[4]=="=") { 
+        variable = compact[3];
+        expression = compact.slice(5);
+        value = "$" + variable + " = " + eval(expression) + "$";
+        write_store.push({variable, expression});
+        console.log(write_store);
+    }
+
+    if (compact.substring(0,3) == "get") {
+        variable = compact[3];
+        for(i=0;i<write_store.length;i++) {
+            console.log(i);
+            if(write_store[i]["variable"] == variable) {
+                create_line(write_store[i]["variable"] + " = " + write_store[i]["expression"], true, 0, "mini_comment");
+                return
+            }
+        }
+    } 
+
     if (value == "-copy") {
         lines = document.getElementById("output")
 		.childNodes.length;
