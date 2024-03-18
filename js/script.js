@@ -1,4 +1,4 @@
-const wolfram_api_url = "https://wolfram.lilquaily.repl.co/" /*Url of instance: server.py*/ 
+const wolfram_api_url = "" /*Url of instance: server.py*/ 
 var inputhistory = [];
 var arrow_line = 0;
 
@@ -7,7 +7,7 @@ window.onload = function () { // when the page loads
 	input = document.getElementById("input");
 	setTimeout(function () {
 		console_welcome();
-	}, 1000);
+	}, 100);
 	input.onkeyup = function (e) {
 		var ev = e || event;
 		if (ev.keyCode == 13) {
