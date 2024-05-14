@@ -20,14 +20,14 @@ body, html, main {
     padding: 0;
     margin: 0;
 }
-main console {
+main #console{
     display: grid;
     grid-template-rows: 2fr 40fr 5fr;
     grid-template-areas: "title"
                          "output"
                          "input";
-    height: 100%;
     width: 100%;
+    height: calc(100vh - 28px);
     background-color: #191b1e;
 }
 
@@ -39,7 +39,7 @@ main console {
     font-weight: 400;
 }
 
-console input {
+input {
     font-size: 1.9vh;
     font-family: 'Source Code Pro', monospace;
     margin: 30px 100px 50px 100px;
@@ -59,7 +59,7 @@ console input {
     border-radius: 10px;
 }
 
-console input:focus {
+input:focus {
     outline: none;
     background: #24272b;
     border: none;
@@ -213,12 +213,20 @@ br {
     margin-top: 15px;
 }
 
-a {
+input ~ a {
+    font-size: 0.9em;
     color: rgb(30, 26, 50);
     text-decoration: none;
-    background: linear-gradient(black, rgb(17, 17, 17));
-    color: white;
+    background: linear-gradient(rgb(219, 219, 219), rgb(220, 220, 220));
+    color: black;
     width: 100vw;
-    padding: 3px;
+    height: 25px;
+    padding: 2px;
+    padding-left: 10px;
     display: block;
+    bottom: 0;
+    position: fixed;
+    opacity: 1;
+    filter: grayscale(100%) invert(1);
+    -webkit-filter: grayscale(100%) invert(1);
 }
