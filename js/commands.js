@@ -12,7 +12,6 @@ const argument_acceptors = {
     "write": [],
     "lopenzo": ["lopenzo"],
     "labb": [],
-    "mira": [],
     "whoami": []
 }
 
@@ -42,7 +41,6 @@ const argument_descriptions = {
         "lopenzo": "text"
     },
     "labb": {},
-    "mira": {},
     "whoami": {}
 }
 
@@ -138,33 +136,6 @@ if (command == "name") {
     }
 }
 
-if (command == "mira") {
-    clear_console_quick();
-    create_line("Jag älskar Mira. ", true, 0, "larger");
-    create_line("<3 <3 <3", true, 0, "larger red");
-    /*delay*/
-    setTimeout(function() {
-    clear_console_quick();
-    create_line("Jag älskar Mira. ", true, 0, "larger red");
-    create_line("<3 <3 <3", true, 0, "larger red");
-    }, 300);
-    setTimeout(function() {
-    clear_console_quick();
-    create_line("Jag älskar Mira. ", true, 0, "larger");
-    create_line("<3 <3 <3", true, 0, "larger red");
-    }, 600);
-    setTimeout(function() {
-    clear_console_quick();
-    create_line("Jag älskar Mira. ", true, 0, "larger red");
-    create_line("<3 <3 <3", true, 0, "larger red");
-    }, 900);
-    setTimeout(function() {
-    clear_console_quick();
-    create_line("Jag älskar Mira. ", true, 0, "larger");
-    create_line("<3 <3 <3", true, 0, "larger red");
-    }, 1200);
-}
-
 
 /* Link command */
 if (command == "link") {
@@ -205,7 +176,7 @@ if (command == "link") {
         if (command_args["questions"]) {
             number_questions = command_args["questions"];
         } else {
-            number_questions = 10000;
+            number_questions = 52;
         }
         
         if (command_args["help"]) {
@@ -273,8 +244,10 @@ function mafy_question() {
     document.capture=true;
     document.mafycapture=true;
     
+    let generated_random = (new Alea())();
+    
     var amount_questions = Object.keys(questions).length;
-    choice = Math.floor(Math.random() * amount_questions);
+    var choice = Math.round(generated_random * amount_questions);
     
     m = questions[choice];
     

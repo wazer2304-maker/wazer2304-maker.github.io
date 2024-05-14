@@ -12,7 +12,7 @@ const questions =
     },
     {
         "questionNum": "2023-2",
-        "question": "Om $a=8$ och $x=\\frac{\\left(\\sqrt[6]{a^{2}}\\right)^{\\frac{5}{2}} \\cdot \\sqrt{a^{2}+a}}{a^{2} \\cdot(\\sqrt[4]{a})^{\\frac{1}{3}}}$, s\u00e5 g\u00e4ller att $x$ \u00e4r lika med<br>(a) $3 \\sqrt[4]{2}$<br>(b) $\\frac{6}{\\sqrt[4]{2}}$<br>(c) $\\pm \\frac{6}{\\sqrt[4]{2}}$<br>(d) inget av (a)-(c) <br><br>",
+        "question": "Om $a=8$ och $x=\\frac{\\left(\\sqrt[6]{a^{2}}\\right)^{\\frac{5}{2}} \\cdot \\sqrt{a^{2}+a}}{a^{2} \\cdot(\\sqrt[4]{a})^{\\frac{1}{3}}}$, s\u00e5 g\u00e4ller att $x$ \u00e4r lika med<br>(a) $3 \\sqrt[4]{2}$<br>(b) $\\frac{6}{\\sqrt[4]{2}}$<br>(c) $± \\frac{6}{\\sqrt[4]{2}}$<br>(d) inget av (a)-(c) <br><br>",
         "answer": "d",
         "keywords": [
             "potenser",
@@ -120,7 +120,7 @@ const questions =
     },
     {
         "questionNum": "2023-13",
-        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -130,7 +130,7 @@ const questions =
     },
     {
         "questionNum": "2023-14",
-        "question": "Om $\\cos \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $\\sin 2 \\alpha$ \u00e4r lika med<br>(a) $2 p \\sqrt{1-p^{2}}$<br>(b) $-2 p \\sqrt{1-p^{2}}$<br>(c) $\\pm 2 p \\sqrt{1-p^{2}}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $\\cos \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $\\sin 2 \\alpha$ \u00e4r lika med<br>(a) $2 p \\sqrt{1-p^{2}}$<br>(b) $-2 p \\sqrt{1-p^{2}}$<br>(c) $± 2 p \\sqrt{1-p^{2}}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -435,7 +435,7 @@ const questions =
     },
     {
         "questionNum": "2022-14",
-        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $|\\cos \\alpha|$ \u00e4r lika med<br>(a) $\\sqrt{1-p^{2}}$<br>(b) $-\\sqrt{1-p^{2}}$<br>(c) $\\pm \\sqrt{1-p^{2}}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $|\\cos \\alpha|$ \u00e4r lika med<br>(a) $\\sqrt{1-p^{2}}$<br>(b) $-\\sqrt{1-p^{2}}$<br>(c) $± \\sqrt{1-p^{2}}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "a",
         "keywords": [
             "trigonometri",
@@ -445,7 +445,7 @@ const questions =
     },
     {
         "questionNum": "2022-15",
-        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $|\\tan \\alpha|$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att $|\\tan \\alpha|$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -605,7 +605,7 @@ const questions =
     {
         "questionNum": "2022-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan.( $\\max 5 \\mathrm{p})$<br>L\u00f6s olikheten$$\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;\\sqrt{\\frac{2}{x}} .$$",
-        "answer": "Kvadratroten ur ett tal $a$ \u00e4r per definition det icke-negativa tal vars kvadrat \u00e4r lika med $a$. Ur definitionen f\u00f6ljer att $a \\geq 0$ och $\\sqrt{a} \\geq 0$.F\u00f6r att de tre kvadratr\u00f6ttern a som f\u00f6rekommer ska vara definierade kr\u00e4vs att $x-1 \\geq 0, x+1 \\geq 0, x \\geq 0$. F\u00f6r at ingen av n \u00e4mnarna ska vara lika med noll kr\u00e4vs att $x \\neq 1, x \\neq-1, x \\neq 0$. Definitionsm\u00e4ngden best\u0103r allts\u0103 av all a $x$ sad an a att $x&gt;1$.Eftersom $0&lt;\\sqrt{x-1}&lt;\\sqrt{x+1}$ har vi att $\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;0$ f\u00f6r alla $x$ i definitionsm\u00e4ngden. H\u00f6gerledet \u00e4r ocksa positivt f\u00f6r all a till \u0103tna $x$. Det betyder att vi kan kvadrera och vara s\u00e4kra paa att vi efter kvadrering f\u00e4r en olikhet ekvivalent med den givna. Kvadrering ger olikheten$$\\left(\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}\\right)^2=\\left(\\frac{\\sqrt{x+1}-\\sqrt{x-1}}{\\sqrt{x^2-1}}\\right)^2=\\frac{2 x-2 \\sqrt{x^2-1}}{x^2-1}&gt;\\frac{2}{x} .$$Eftersom $x^2-1&gt;0$ och $x&gt;0$ kan vi f\u00f6rl\u00e4nga med bad a n \u00e4mn arn a och be$\\mathrm{h}$ \u00e5lla olikhetstecknet, vilket (efter f\u00f6rkortning med $2&gt;0$ ) ger den ekvivalenta olikheten$$x\\left(x-\\sqrt{x^2-1}\\right)&gt;x^2-1 .$$Enkel omskrivning leder till$$1&gt;x \\sqrt{x^2-1} .$$Aterigen \u00e4r b\u1ea3da leden positiva, sa att kvadrering leder till den ekvivalenta olikheten$$x^4-x^2-1&lt;0 .$$S\u00e4tt $t=x^2$. Andragradsfunktionen $f(t)=t^2-t-1$ antar negativa v\u00e4rden mellan sina nollst\u00e4llen, som \u00e4r $\\frac{1 \\pm \\sqrt{5}}{2}$. Eftersom $t=x^2&gt;1$ kommer olikheten att g\u00e4lla f\u00f6r$$1&lt;x^2&lt;\\frac{1+\\sqrt{5}}{2}$$och eftersom $x&gt;1$ f\u00e4r vi att den givna olikheten \u00e4r $\\mathrm{san} \\mathrm{n}$ om och endast om$$1&lt;x&lt;\\sqrt{\\frac{1+\\sqrt{5}}{2}}$$",
+        "answer": "Kvadratroten ur ett tal $a$ \u00e4r per definition det icke-negativa tal vars kvadrat \u00e4r lika med $a$. Ur definitionen f\u00f6ljer att $a \\geq 0$ och $\\sqrt{a} \\geq 0$.F\u00f6r att de tre kvadratr\u00f6ttern a som f\u00f6rekommer ska vara definierade kr\u00e4vs att $x-1 \\geq 0, x+1 \\geq 0, x \\geq 0$. F\u00f6r at ingen av n \u00e4mnarna ska vara lika med noll kr\u00e4vs att $x \\neq 1, x \\neq-1, x \\neq 0$. Definitionsm\u00e4ngden best\u0103r allts\u0103 av all a $x$ sad an a att $x&gt;1$.Eftersom $0&lt;\\sqrt{x-1}&lt;\\sqrt{x+1}$ har vi att $\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}&gt;0$ f\u00f6r alla $x$ i definitionsm\u00e4ngden. H\u00f6gerledet \u00e4r ocksa positivt f\u00f6r all a till \u0103tna $x$. Det betyder att vi kan kvadrera och vara s\u00e4kra paa att vi efter kvadrering f\u00e4r en olikhet ekvivalent med den givna. Kvadrering ger olikheten$$\\left(\\frac{1}{\\sqrt{x-1}}-\\frac{1}{\\sqrt{x+1}}\\right)^2=\\left(\\frac{\\sqrt{x+1}-\\sqrt{x-1}}{\\sqrt{x^2-1}}\\right)^2=\\frac{2 x-2 \\sqrt{x^2-1}}{x^2-1}&gt;\\frac{2}{x} .$$Eftersom $x^2-1&gt;0$ och $x&gt;0$ kan vi f\u00f6rl\u00e4nga med bad a n \u00e4mn arn a och be$\\mathrm{h}$ \u00e5lla olikhetstecknet, vilket (efter f\u00f6rkortning med $2&gt;0$ ) ger den ekvivalenta olikheten$$x\\left(x-\\sqrt{x^2-1}\\right)&gt;x^2-1 .$$Enkel omskrivning leder till$$1&gt;x \\sqrt{x^2-1} .$$Aterigen \u00e4r b\u1ea3da leden positiva, sa att kvadrering leder till den ekvivalenta olikheten$$x^4-x^2-1&lt;0 .$$S\u00e4tt $t=x^2$. Andragradsfunktionen $f(t)=t^2-t-1$ antar negativa v\u00e4rden mellan sina nollst\u00e4llen, som \u00e4r $\\frac{1 ± \\sqrt{5}}{2}$. Eftersom $t=x^2&gt;1$ kommer olikheten att g\u00e4lla f\u00f6r$$1&lt;x^2&lt;\\frac{1+\\sqrt{5}}{2}$$och eftersom $x&gt;1$ f\u00e4r vi att den givna olikheten \u00e4r $\\mathrm{san} \\mathrm{n}$ om och endast om$$1&lt;x&lt;\\sqrt{\\frac{1+\\sqrt{5}}{2}}$$",
         "keywords": [
             "olikheter",
             "r\u00c3\u00b6tter",
@@ -1655,7 +1655,7 @@ const questions =
     },
     {
         "questionNum": "2017-13",
-        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar<br><br>",
         "answer": "a",
         "keywords": [
             "trigonometri",
@@ -1723,7 +1723,7 @@ const questions =
     },
     {
         "questionNum": "2017-20",
-        "question": "F\u00f6r alla vinklar $\\theta$ g\u00e4ller att $\\tan \\frac{\\theta}{2}$ \u00e4r lika med<br>(a) $\\frac{\\sin \\theta}{1-\\cos \\theta}$<br>(b) $\\pm \\frac{1-\\cos \\theta}{\\sin \\theta}$<br>(c) $\\frac{1+\\cos \\theta}{\\sin \\theta}$<br>(d) $\\frac{\\sin \\theta}{1+\\cos \\theta}$. <br><br>",
+        "question": "F\u00f6r alla vinklar $\\theta$ g\u00e4ller att $\\tan \\frac{\\theta}{2}$ \u00e4r lika med<br>(a) $\\frac{\\sin \\theta}{1-\\cos \\theta}$<br>(b) $± \\frac{1-\\cos \\theta}{\\sin \\theta}$<br>(c) $\\frac{1+\\cos \\theta}{\\sin \\theta}$<br>(d) $\\frac{\\sin \\theta}{1+\\cos \\theta}$. <br><br>",
         "answer": "d",
         "keywords": [
             "trigonometri",
@@ -1901,7 +1901,7 @@ const questions =
     },
     {
         "questionNum": "2016-7",
-        "question": "Ur likheten $(a-x)(b-x)=(1-a x)(1-b x)$ f\u00f6ljer att<br>(a) $a b=1$<br>(b) $x= \\pm 1$<br>(c) $x=0$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Ur likheten $(a-x)(b-x)=(1-a x)(1-b x)$ f\u00f6ljer att<br>(a) $a b=1$<br>(b) $x= ± 1$<br>(c) $x=0$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "polynom",
@@ -1961,7 +1961,7 @@ const questions =
     },
     {
         "questionNum": "2016-13",
-        "question": "Om $\\cos \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{\\sqrt{1-p^{2}}}{p}$<br>(b) $\\frac{\\sqrt{1-p^{2}}}{p}$<br>(c) $\\pm \\frac{\\sqrt{1-p^{2}}}{p}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\cos \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{\\sqrt{1-p^{2}}}{p}$<br>(b) $\\frac{\\sqrt{1-p^{2}}}{p}$<br>(c) $± \\frac{\\sqrt{1-p^{2}}}{p}$<br>(d) annat svar.<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -2266,7 +2266,7 @@ const questions =
     },
     {
         "questionNum": "2015-13",
-        "question": "Om $\\tan \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 g\u00e4ller att $\\sin \\alpha$ \u00e4r lika med<br>(a) $\\frac{-p}{\\sqrt{1+p^{2}}}$<br>(b) $\\frac{p}{\\sqrt{1+p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1+p^{2}}}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\tan \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 g\u00e4ller att $\\sin \\alpha$ \u00e4r lika med<br>(a) $\\frac{-p}{\\sqrt{1+p^{2}}}$<br>(b) $\\frac{p}{\\sqrt{1+p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1+p^{2}}}$<br>(d) annat svar.<br><br>",
         "answer": "a",
         "keywords": [
             "trigonometri",
@@ -2276,7 +2276,7 @@ const questions =
     },
     {
         "questionNum": "2015-14",
-        "question": "Om $\\sin \\alpha=\\frac{1}{7}$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att cot $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{1}{4 \\sqrt{3}}$<br>(b) $-4 \\sqrt{3}$<br>(c) $\\pm \\frac{1}{4 \\sqrt{3}}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\sin \\alpha=\\frac{1}{7}$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att cot $\\alpha$ \u00e4r lika med<br>(a) $-\\frac{1}{4 \\sqrt{3}}$<br>(b) $-4 \\sqrt{3}$<br>(c) $± \\frac{1}{4 \\sqrt{3}}$<br>(d) annat svar.<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -2447,7 +2447,7 @@ const questions =
     {
         "questionNum": "2015-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan. (max $5 \\mathrm{p}).\\space$<br><br>L\u00f6s ekvationen<br><br><br>$$sin(x) = sin(2x) + sin(3x)$$<br>",
-        "answer": "Vi använder trigonometriska formler för att skriva om högerledet: $$ \\begin{aligned} \\sin x & =\\sin 2 x+\\sin 3 x= \\\\ & =2 \\sin x \\cos x+\\sin 2 x \\cos x+\\cos 2 x \\sin x= \\\\ & =2 \\sin x \\cos x(1+\\cos x)+\\cos 2 x \\sin x= \\\\ & =\\sin x\\left(2 \\cos x+2 \\cos ^2 x+\\cos 2 x\\right)= \\\\ & =\\sin x\\left(2 \\cos x+2 \\cos ^2 x+2 \\cos ^2 x-1\\right) . \\end{aligned} $$ Den givna ekvationen är alltsả ekvivalent med $$ \\sin x\\left(4 \\cos ^2 x+2 \\cos x-2\\right)=2 \\sin x\\left(2 \\cos ^2 x+\\cos x-1\\right)=0 . $$ En produkt är lika med noll om och endast om nảgon av faktorerna är lika med noll. Vi behöver alltsã lösa ekvationerna $$ \\sin x=0 \\quad \\text { och } \\quad 2 \\cos ^2 x+\\cos x-1=0 . $$ Deras lösningar kommer tillsammans att ge alla lösningar till den givna ekvationen. Ekvationen $\\sin x=0$ har lösningarna $x_k^{\\prime}=k \\pi$, där $k$ är ett heltal. I den andra ekvationen sätter vi $t=\\cos x$ och făr andragradsekvationen $$ 2 t^2+t-1=(2 t-1)(t+1)=0, $$ som har lösningarna $t=-1$ och $t=\\frac{1}{2}$. Slutligen behöver vi alltsã lösa $\\cos x=-1$, vars lösningar är $x_l=(2 l+1) \\pi$, och $\\cos x=\\frac{1}{2}$, med lösningar $\\pm \\frac{\\pi}{3}+2 k \\pi$, där $l$ och $k$ är heltal. Lösningarna $x_l=(2 l+1) \\pi, l$ heltal, ingär i lösningsskaran $x_k^{\\prime}=k \\pi$, där $k$ är ett heltal. Alla lösningar ges slutligen av $$ x_k^{\\prime}=k \\pi, \\quad x_k^{\\prime \\prime}=\\frac{\\pi}{3}+2 k \\pi, \\quad x_k^{\\prime \\prime \\prime}=-\\frac{\\pi}{3}+2 k \\pi, $$ där $k$ varierar över mängden av alla heltal.",
+        "answer": "Vi använder trigonometriska formler för att skriva om högerledet: $$ \\begin{aligned} \\sin x & =\\sin 2 x+\\sin 3 x= \\\\ & =2 \\sin x \\cos x+\\sin 2 x \\cos x+\\cos 2 x \\sin x= \\\\ & =2 \\sin x \\cos x(1+\\cos x)+\\cos 2 x \\sin x= \\\\ & =\\sin x\\left(2 \\cos x+2 \\cos ^2 x+\\cos 2 x\\right)= \\\\ & =\\sin x\\left(2 \\cos x+2 \\cos ^2 x+2 \\cos ^2 x-1\\right) . \\end{aligned} $$ Den givna ekvationen är alltsả ekvivalent med $$ \\sin x\\left(4 \\cos ^2 x+2 \\cos x-2\\right)=2 \\sin x\\left(2 \\cos ^2 x+\\cos x-1\\right)=0 . $$ En produkt är lika med noll om och endast om nảgon av faktorerna är lika med noll. Vi behöver alltsã lösa ekvationerna $$ \\sin x=0 \\quad \\text { och } \\quad 2 \\cos ^2 x+\\cos x-1=0 . $$ Deras lösningar kommer tillsammans att ge alla lösningar till den givna ekvationen. Ekvationen $\\sin x=0$ har lösningarna $x_k^{\\prime}=k \\pi$, där $k$ är ett heltal. I den andra ekvationen sätter vi $t=\\cos x$ och făr andragradsekvationen $$ 2 t^2+t-1=(2 t-1)(t+1)=0, $$ som har lösningarna $t=-1$ och $t=\\frac{1}{2}$. Slutligen behöver vi alltsã lösa $\\cos x=-1$, vars lösningar är $x_l=(2 l+1) \\pi$, och $\\cos x=\\frac{1}{2}$, med lösningar $± \\frac{\\pi}{3}+2 k \\pi$, där $l$ och $k$ är heltal. Lösningarna $x_l=(2 l+1) \\pi, l$ heltal, ingär i lösningsskaran $x_k^{\\prime}=k \\pi$, där $k$ är ett heltal. Alla lösningar ges slutligen av $$ x_k^{\\prime}=k \\pi, \\quad x_k^{\\prime \\prime}=\\frac{\\pi}{3}+2 k \\pi, \\quad x_k^{\\prime \\prime \\prime}=-\\frac{\\pi}{3}+2 k \\pi, $$ där $k$ varierar över mängden av alla heltal.",
         "keywords": [
             "trigonometri",
             "ekvationer",
@@ -2574,7 +2574,7 @@ const questions =
     },
     {
         "questionNum": "2014-13",
-        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{-p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$, s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{-p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar.<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -2584,7 +2584,7 @@ const questions =
     },
     {
         "questionNum": "2014-14",
-        "question": "Om $\\tan \\alpha=-\\frac{5}{12}$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att $\\sin \\alpha$ \u00e4r lika med<br>(a) $\\frac{5}{13}$<br>(b) $-\\frac{5}{13}$<br>(c) $\\pm \\frac{5}{13}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\tan \\alpha=-\\frac{5}{12}$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att $\\sin \\alpha$ \u00e4r lika med<br>(a) $\\frac{5}{13}$<br>(b) $-\\frac{5}{13}$<br>(c) $± \\frac{5}{13}$<br>(d) annat svar.<br><br>",
         "answer": "a",
         "keywords": [
             "trigonometri",
@@ -2884,7 +2884,7 @@ const questions =
     },
     {
         "questionNum": "2013-13",
-        "question": "Om $\\cos \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{\\sqrt{1-p^{2}}}{p}$<br>(b) $\\frac{\\sqrt{1-p^{2}}}{|p|}$<br>(c) $\\pm \\frac{\\sqrt{1-p^{2}}}{p}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\cos \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{\\sqrt{1-p^{2}}}{p}$<br>(b) $\\frac{\\sqrt{1-p^{2}}}{|p|}$<br>(c) $± \\frac{\\sqrt{1-p^{2}}}{p}$<br>(d) annat svar.<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -2894,7 +2894,7 @@ const questions =
     },
     {
         "questionNum": "2013-14",
-        "question": "Om $\\tan \\alpha=\\frac{3}{4}$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att $\\cos \\alpha$ \u00e4r lika med<br>(a) $\\frac{3}{5}$<br>(b) $-\\frac{3}{5}$<br>(c) $\\pm \\frac{4}{5}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\tan \\alpha=\\frac{3}{4}$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att $\\cos \\alpha$ \u00e4r lika med<br>(a) $\\frac{3}{5}$<br>(b) $-\\frac{3}{5}$<br>(c) $± \\frac{4}{5}$<br>(d) annat svar.<br><br>",
         "answer": "d",
         "keywords": [
             "trigonometri",
@@ -3064,7 +3064,7 @@ const questions =
     {
         "questionNum": "2013-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan. (max $5 \\mathrm{p}).\\space$<br><br>Best\u00e4m alla $p$ och $q$ s\u00e5dana att funktionen $f(x)=x^{2}+p x+q$ har sitt minsta v\u00e4rde i $x_{0}=2$, samt har tv\u00e5 reella nollst\u00e4llen $x_{1}, x_{2}$ som uppfyller $x_{1}^{2}=\\frac{18}{x_{2}^{2}}$.<br>",
-        "answer": "Vi b\u00f6rjar med att kvadratkomplettera$$f(x)=\\left(x+\\frac{p}{2}\\right)^2+q-\\frac{p^2}{4} \\geq q-\\frac{p^2}{4}$$med likhetstecken f\u00f6r $x=-\\frac{p}{2}$. Detta ger oss dels att andragradsekvationen $x^2+p x+q=0$ har reella l\u00f6sningar om och endast om $p^2-4 q \\geq 0$, dels att $f$ antar sitt minsta v\u00e4rde f\u00f6r $x_0=-\\frac{p}{2}$. Det betyder att $p=-4$. Villkoret $p^2-4 q \\geq 0$ kan nu skrivas om till $q \\leq 4$, och l\u00f6sningarna till andragradsekvationen ges av$$x_{1,2}=-2 \\pm \\sqrt{4-q}$$Vi har$$x_1^2 x_2^2=\\left(x_1 x_2\\right)^2=((-2-\\sqrt{4-q})(-2+\\sqrt{4-q}))^2=(4-4+q)^2=q^2=18$$vilket g\u00e4ller f\u00f6r $q= \\pm 3 \\sqrt{2}$. Av dessa tv\u00e5 v\u00e4rden \u00e4r det dock endast $q=-3 \\sqrt{2}$ som uppfyller $q \\leq 4$. L\u00f6sningen ges allts\u00e5 av $p=-4, q=-3 \\sqrt{2}$.",
+        "answer": "Vi b\u00f6rjar med att kvadratkomplettera$$f(x)=\\left(x+\\frac{p}{2}\\right)^2+q-\\frac{p^2}{4} \\geq q-\\frac{p^2}{4}$$med likhetstecken f\u00f6r $x=-\\frac{p}{2}$. Detta ger oss dels att andragradsekvationen $x^2+p x+q=0$ har reella l\u00f6sningar om och endast om $p^2-4 q \\geq 0$, dels att $f$ antar sitt minsta v\u00e4rde f\u00f6r $x_0=-\\frac{p}{2}$. Det betyder att $p=-4$. Villkoret $p^2-4 q \\geq 0$ kan nu skrivas om till $q \\leq 4$, och l\u00f6sningarna till andragradsekvationen ges av$$x_{1,2}=-2 ± \\sqrt{4-q}$$Vi har$$x_1^2 x_2^2=\\left(x_1 x_2\\right)^2=((-2-\\sqrt{4-q})(-2+\\sqrt{4-q}))^2=(4-4+q)^2=q^2=18$$vilket g\u00e4ller f\u00f6r $q= ± 3 \\sqrt{2}$. Av dessa tv\u00e5 v\u00e4rden \u00e4r det dock endast $q=-3 \\sqrt{2}$ som uppfyller $q \\leq 4$. L\u00f6sningen ges allts\u00e5 av $p=-4, q=-3 \\sqrt{2}$.",
         "keywords": [
             "Algebraiska uttryck",
             "kvadratkomplettering",
@@ -3193,7 +3193,7 @@ const questions =
     },
     {
         "questionNum": "2012-13",
-        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar. <br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\frac{3 \\pi}{2}&lt;\\alpha&lt;2 \\pi$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $\\frac{|p|}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar. <br><br>",
         "answer": "a",
         "keywords": [
             "trigonometri",
@@ -3383,7 +3383,7 @@ const questions =
     },
     {
         "questionNum": "2011-1",
-        "question": "$\\mathrm{Om} U=\\frac{4}{4-x^{2}}$, s\u00e5 g\u00e4ller f\u00f6r alla reella $x \\neq \\pm 2$ att<br>(a) $U=-U$<br>(b) $U=\\frac{1}{x-2}-\\frac{1}{x+2}$<br>(c) $U&gt;1$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "$\\mathrm{Om} U=\\frac{4}{4-x^{2}}$, s\u00e5 g\u00e4ller f\u00f6r alla reella $x \\neq ± 2$ att<br>(a) $U=-U$<br>(b) $U=\\frac{1}{x-2}-\\frac{1}{x+2}$<br>(c) $U&gt;1$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "rationella uttryck",
@@ -3393,7 +3393,7 @@ const questions =
     },
     {
         "questionNum": "2011-2",
-        "question": "Om $x, y, z$ \u00e4r reella tal s\u00e5dana att $x=\\sqrt{y^{4}}, z=\\sqrt{y^{2}}$, och $U=y z^{2}-x z$, s\u00e5 g\u00e4ller f\u00f6r alla reella $y$ att<br>(a) $U=0$<br>(b) $U= \\pm 2 y^{3}$<br>(c) $y^{3}-|y|^{3}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $x, y, z$ \u00e4r reella tal s\u00e5dana att $x=\\sqrt{y^{4}}, z=\\sqrt{y^{2}}$, och $U=y z^{2}-x z$, s\u00e5 g\u00e4ller f\u00f6r alla reella $y$ att<br>(a) $U=0$<br>(b) $U= ± 2 y^{3}$<br>(c) $y^{3}-|y|^{3}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "c",
         "keywords": [
             "potenser",
@@ -3463,7 +3463,7 @@ const questions =
     },
     {
         "questionNum": "2011-9",
-        "question": "Alla positiva reella l\u00f6sningar till ekvationen $x^{x^{2}-3 x}=x^{2}$ ges av<br>(a) $x_{1,2}=\\frac{3 \\pm \\sqrt{17}}{2}$<br>(b) $x=\\frac{3+\\sqrt{17}}{2}$<br>(c) ekvationen har inga positiva reella l\u00f6sningar<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Alla positiva reella l\u00f6sningar till ekvationen $x^{x^{2}-3 x}=x^{2}$ ges av<br>(a) $x_{1,2}=\\frac{3 ± \\sqrt{17}}{2}$<br>(b) $x=\\frac{3+\\sqrt{17}}{2}$<br>(c) ekvationen har inga positiva reella l\u00f6sningar<br>(d) inget av (a)-(c)<br><br>",
         "answer": "d",
         "keywords": [
             "potenser",
@@ -3503,7 +3503,7 @@ const questions =
     },
     {
         "questionNum": "2011-13",
-        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar. <br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\pi&lt;\\alpha&lt;\\frac{3 \\pi}{2}$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar. <br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -3683,7 +3683,7 @@ const questions =
     {
         "questionNum": "2011-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan. (max $5 \\mathrm{p}$ )<br><br>Finn alla reella l\u00f6sningar till ekvationen<br>$$\\left|x^{2}-2\\right| x||=1$$",
-        "answer": "F\u00f6r $x \\geq 0$ har vi $|x|=x$, och $\\left|x^2-2\\right| x||=\\left|x^2-2 x\\right|=1$. F\u00f6r $x&lt;0$ f\u00e5r vi ist\u00e4llet $|x|=-x$, och $\\left|x^2-2\\right| x||=\\left|x^2+2 x\\right|=1$. Alla l\u00f6sningar till den givna ekvationen kommer allts\u00e5 att ges av de icke-negativa l\u00f6sningarna till ekvationerna $x^2-2 x= \\pm 1$, och av de negativa l\u00f6sningarna till ekvationerna $x^2+2 x= \\pm 1$(i) $x^2-2 x=1$ har l\u00f6sningarna $1 \\pm \\sqrt{2}$, av vilka endast $1+\\sqrt{2}$ \u00e4r icke-negativ(ii) $x^2-2 x=-1$ har dubbelrot 1 , som \u00e4r icke-negativ(iii) $x^2+2 x=1$ har l\u00f6sningarna $-1 \\pm \\sqrt{2}$, av vilka endast $-1-\\sqrt{2}$ \u00e4r negativ(iv) $x^2+2 x=-1$ har dubbelrot -1 , som \u00e4r negativ.Den givna ekvationen har allts\u00e5 l\u00f6sningarna \\pm 1 och $\\pm(1+\\sqrt{2})$.",
+        "answer": "F\u00f6r $x \\geq 0$ har vi $|x|=x$, och $\\left|x^2-2\\right| x||=\\left|x^2-2 x\\right|=1$. F\u00f6r $x&lt;0$ f\u00e5r vi ist\u00e4llet $|x|=-x$, och $\\left|x^2-2\\right| x||=\\left|x^2+2 x\\right|=1$. Alla l\u00f6sningar till den givna ekvationen kommer allts\u00e5 att ges av de icke-negativa l\u00f6sningarna till ekvationerna $x^2-2 x= ± 1$, och av de negativa l\u00f6sningarna till ekvationerna $x^2+2 x= ± 1$(i) $x^2-2 x=1$ har l\u00f6sningarna $1 ± \\sqrt{2}$, av vilka endast $1+\\sqrt{2}$ \u00e4r icke-negativ(ii) $x^2-2 x=-1$ har dubbelrot 1 , som \u00e4r icke-negativ(iii) $x^2+2 x=1$ har l\u00f6sningarna $-1 ± \\sqrt{2}$, av vilka endast $-1-\\sqrt{2}$ \u00e4r negativ(iv) $x^2+2 x=-1$ har dubbelrot -1 , som \u00e4r negativ.Den givna ekvationen har allts\u00e5 l\u00f6sningarna ± 1 och $±(1+\\sqrt{2})$.",
         "keywords": [
             "absolutbelopp",
             "ekvationer",
@@ -3692,7 +3692,7 @@ const questions =
     },
     {
         "questionNum": "2010-1",
-        "question": "Om $a=1, b=-2$, och $x=a^{2} \\sqrt{a b+b^{2}+2}$, s\u00e5 g\u00e4ller<br>(a) $x= \\pm 2$<br>(b) $x=2$<br>(c) $x=-2$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Om $a=1, b=-2$, och $x=a^{2} \\sqrt{a b+b^{2}+2}$, s\u00e5 g\u00e4ller<br>(a) $x= ± 2$<br>(b) $x=2$<br>(c) $x=-2$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "potenser",
@@ -3702,7 +3702,7 @@ const questions =
     },
     {
         "questionNum": "2010-2",
-        "question": "$\\mathrm{Om} U=\\frac{6}{9-x^{2}}+\\frac{1}{x-3}+\\frac{1}{x+3}$, s\u00e5 g\u00e4ller f\u00f6r alla $x \\neq \\pm 3$ att<br>(a) $U=0$<br>(b) $U=\\frac{2}{x+3}$<br>(c) $U=\\frac{2}{x-3}$<br>(d) inget av (a)-(c)<br><br>",
+        "question": "$\\mathrm{Om} U=\\frac{6}{9-x^{2}}+\\frac{1}{x-3}+\\frac{1}{x+3}$, s\u00e5 g\u00e4ller f\u00f6r alla $x \\neq ± 3$ att<br>(a) $U=0$<br>(b) $U=\\frac{2}{x+3}$<br>(c) $U=\\frac{2}{x-3}$<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "rationella uttryck",
@@ -3712,7 +3712,7 @@ const questions =
     },
     {
         "questionNum": "2010-3",
-        "question": "Om $a&gt;\\sqrt{b}, a^{2}=b+1$ och $U=(\\sqrt{a-\\sqrt{b}}-\\sqrt{a+\\sqrt{b}})^{2}$, s\u00e5 g\u00e4ller<br>(a) $U=a \\pm 1$<br>(b) $U=2 a \\pm 2$<br>(c) $2 a-2$<br>(d) inget av (a)-(c).<br><br>",
+        "question": "Om $a&gt;\\sqrt{b}, a^{2}=b+1$ och $U=(\\sqrt{a-\\sqrt{b}}-\\sqrt{a+\\sqrt{b}})^{2}$, s\u00e5 g\u00e4ller<br>(a) $U=a ± 1$<br>(b) $U=2 a ± 2$<br>(c) $2 a-2$<br>(d) inget av (a)-(c).<br><br>",
         "answer": "c",
         "keywords": [
             "potenser",
@@ -3772,7 +3772,7 @@ const questions =
     },
     {
         "questionNum": "2010-9",
-        "question": "Alla reella l\u00f6sningar till ekvationen $\\ln x+\\ln (x+1)=0$ ges av<br>(a) $x_{1,2}=\\frac{-1 \\pm \\sqrt{5}}{2}$<br>(b) $x=\\frac{-1+\\sqrt{5}}{2}$<br>(c) ekvationen har inga reella l\u00f6sningar<br>(d) inget av (a)-(c)<br><br>",
+        "question": "Alla reella l\u00f6sningar till ekvationen $\\ln x+\\ln (x+1)=0$ ges av<br>(a) $x_{1,2}=\\frac{-1 ± \\sqrt{5}}{2}$<br>(b) $x=\\frac{-1+\\sqrt{5}}{2}$<br>(c) ekvationen har inga reella l\u00f6sningar<br>(d) inget av (a)-(c)<br><br>",
         "answer": "b",
         "keywords": [
             "ekvationer"
@@ -3820,7 +3820,7 @@ const questions =
     },
     {
         "questionNum": "2010-14",
-        "question": "Om $\\sin \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $\\pm \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar.<br><br>",
+        "question": "Om $\\sin \\alpha=p$, och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$ s\u00e5 g\u00e4ller att tan $\\alpha$ \u00e4r lika med<br>(a) $\\frac{p}{\\sqrt{1-p^{2}}}$<br>(b) $-\\frac{p}{\\sqrt{1-p^{2}}}$<br>(c) $± \\frac{p}{\\sqrt{1-p^{2}}}$<br>(d) annat svar.<br><br>",
         "answer": "b",
         "keywords": [
             "trigonometri",
@@ -4649,7 +4649,7 @@ const questions =
     },
     {
         "questionNum": "2007-4",
-        "question": "Om $f(x)=x^{2}$ och $g(x)=\\sqrt{x}$, s\u00e5 \u00e4r $g(f(4))$ lika med<br>(a) \\pm 4 <br>(b) -4<br>(c) 4 <br>(d) annat svar.<br><br>",
+        "question": "Om $f(x)=x^{2}$ och $g(x)=\\sqrt{x}$, s\u00e5 \u00e4r $g(f(4))$ lika med<br>(a) ± 4 <br>(b) -4<br>(c) 4 <br>(d) annat svar.<br><br>",
         "answer": "c",
         "keywords": [
             "potenser",
@@ -4659,7 +4659,7 @@ const questions =
     },
     {
         "questionNum": "2007-5",
-        "question": "Om $f(x)=x^{2}$ och $g(x)=\\sqrt{x}$, s\u00e5 \u00e4r $g(f(-4))$ lika med<br>(a) \\pm 4<br>(b) -4 <br>(c) 4 <br>(d) annat svar. <br><br>",
+        "question": "Om $f(x)=x^{2}$ och $g(x)=\\sqrt{x}$, s\u00e5 \u00e4r $g(f(-4))$ lika med<br>(a) ± 4<br>(b) -4 <br>(c) 4 <br>(d) annat svar. <br><br>",
         "answer": "c",
         "keywords": [
             "potenser",
@@ -4737,7 +4737,7 @@ const questions =
     },
     {
         "questionNum": "2007-13",
-        "question": "Om $\\sin \\alpha=\\frac{1}{4}$ och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 \u00e4r $\\cos \\alpha$ lika med<br>(a) $\\frac{\\sqrt{15}}{4}$<br>(b) $-\\frac{\\sqrt{15}}{4}$<br>(c) $\\pm \\frac{\\sqrt{15}}{4}$<br>(d) annat svar. <br><br>",
+        "question": "Om $\\sin \\alpha=\\frac{1}{4}$ och $\\frac{\\pi}{2}&lt;\\alpha&lt;\\pi$, s\u00e5 \u00e4r $\\cos \\alpha$ lika med<br>(a) $\\frac{\\sqrt{15}}{4}$<br>(b) $-\\frac{\\sqrt{15}}{4}$<br>(c) $± \\frac{\\sqrt{15}}{4}$<br>(d) annat svar. <br><br>",
         "answer": "b",
         "keywords": [
             "trigonometriska formler",
@@ -4917,7 +4917,7 @@ const questions =
     {
         "questionNum": "2007-C",
         "question": "Ge fullst\u00e4ndig l\u00f6sning till uppgiften nedan. (max $5 \\mathrm{p}$ )<br><br>Finn alla (reella) l\u00f6sningar till ekvationen<br>$$2 \\cos ^{2} x-\\sin x=1$$",
-        "answer": "Med hj\u00e4lp av trigonometriska ettan kan ekvationen skrivas om till$$2\\left(1-\\sin ^{2} x\\right)-\\sin x=1$$S\u00e4tt $t=\\sin x$. Vi f\u00e5r d\u00e5 en andragradsekvation f\u00f6r $t$$$2 t^{2}+t-1=0$$som har l\u00f6sningarna $t_{1}=-1$ och $t_{2}=\\frac{1}{2}$. Det \u00e5terst\u00e5r nu att l\u00f6sa ekvationerna $\\sin x=-1$ och $\\sin x=\\frac{1}{2}$. Den f\u00f6rsta av dem har l\u00f6sningarna$$x_{n}=\\frac{3 \\pi}{2}+2 n \\pi, \\quad \\text { d\u00e4r } n \\text { \u00e4r ett godtyckligt heltal }$$medan den andra har l\u00f6sningarna$$x_{n}^{\\prime}=\\frac{\\pi}{6}+2 n \\pi \\quad \\text { samt } \\quad x_{n}^{\\prime \\prime}=\\left(\\pi-\\frac{\\pi}{6}\\right)+2 n \\pi, \\quad \\text { d\u00e4r } n \\text { \u00e4r ett godtyckligt heltal. }$$Den givna ekvationen har allts\u00e5 l\u00f6sningarna$$\\begin{aligned}& x_{n}=\\frac{3 \\pi}{2}+2 n \\pi, \\& x_{n}^{\\prime}=\\frac{\\pi}{6}+2 n \\pi, \\& x_{n}^{\\prime \\prime}=\\frac{5 \\pi}{6}+2 n \\pi,\\end{aligned}$$d\u00e4r $n$ \u00e4r ett godtyckligt heltal.Alternativ l\u00f6sning: Eftersom $2 \\cos ^{2} x-1=\\cos 2 x$, kan ekvationen skrivas om till$$\\cos 2 x=\\sin x=\\cos \\left(\\frac{\\pi}{2}-x\\right)$$L\u00f6sningarna \u00e4r d\u00e5 alla reella $x$ s\u00e5dana att$$2 x= \\pm\\left(\\frac{\\pi}{2}-x\\right)+2 k \\pi, \\quad \\text { d\u00e4r } k \\text { \u00e4r ett godtyckligt heltal. }$$Vid val av plustecken: F\u00f6r $k=3 n$ (d.v.s. $k$ delbart med 3) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}^{\\prime}\\right\\}$ fr\u00e5n ovan, f\u00f6r $k=3 n+1$ ( $k$ ger rest 1 vid division med 3) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}^{\\prime \\prime}\\right\\}$ och, slutligen, f\u00f6r $k=3 n+2$ ( $k$ ger rest 2 vid division med 3 ) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}\\right\\}$.Vid val av minustecken: Vi f\u00e5r l\u00f6sningarna $\\left\\{-\\frac{\\pi}{2}+2 k \\pi\\right\\}$, vilket \u00e4r samma l\u00f6sningsskara som $\\left\\{\\frac{3 \\pi}{2}+2 n \\pi\\right\\}$",
+        "answer": "Med hj\u00e4lp av trigonometriska ettan kan ekvationen skrivas om till$$2\\left(1-\\sin ^{2} x\\right)-\\sin x=1$$S\u00e4tt $t=\\sin x$. Vi f\u00e5r d\u00e5 en andragradsekvation f\u00f6r $t$$$2 t^{2}+t-1=0$$som har l\u00f6sningarna $t_{1}=-1$ och $t_{2}=\\frac{1}{2}$. Det \u00e5terst\u00e5r nu att l\u00f6sa ekvationerna $\\sin x=-1$ och $\\sin x=\\frac{1}{2}$. Den f\u00f6rsta av dem har l\u00f6sningarna$$x_{n}=\\frac{3 \\pi}{2}+2 n \\pi, \\quad \\text { d\u00e4r } n \\text { \u00e4r ett godtyckligt heltal }$$medan den andra har l\u00f6sningarna$$x_{n}^{\\prime}=\\frac{\\pi}{6}+2 n \\pi \\quad \\text { samt } \\quad x_{n}^{\\prime \\prime}=\\left(\\pi-\\frac{\\pi}{6}\\right)+2 n \\pi, \\quad \\text { d\u00e4r } n \\text { \u00e4r ett godtyckligt heltal. }$$Den givna ekvationen har allts\u00e5 l\u00f6sningarna$$\\begin{aligned}& x_{n}=\\frac{3 \\pi}{2}+2 n \\pi, \\& x_{n}^{\\prime}=\\frac{\\pi}{6}+2 n \\pi, \\& x_{n}^{\\prime \\prime}=\\frac{5 \\pi}{6}+2 n \\pi,\\end{aligned}$$d\u00e4r $n$ \u00e4r ett godtyckligt heltal.Alternativ l\u00f6sning: Eftersom $2 \\cos ^{2} x-1=\\cos 2 x$, kan ekvationen skrivas om till$$\\cos 2 x=\\sin x=\\cos \\left(\\frac{\\pi}{2}-x\\right)$$L\u00f6sningarna \u00e4r d\u00e5 alla reella $x$ s\u00e5dana att$$2 x= ±\\left(\\frac{\\pi}{2}-x\\right)+2 k \\pi, \\quad \\text { d\u00e4r } k \\text { \u00e4r ett godtyckligt heltal. }$$Vid val av plustecken: F\u00f6r $k=3 n$ (d.v.s. $k$ delbart med 3) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}^{\\prime}\\right\\}$ fr\u00e5n ovan, f\u00f6r $k=3 n+1$ ( $k$ ger rest 1 vid division med 3) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}^{\\prime \\prime}\\right\\}$ och, slutligen, f\u00f6r $k=3 n+2$ ( $k$ ger rest 2 vid division med 3 ) f\u00e5r vi l\u00f6sningsskaran $\\left\\{x_{n}\\right\\}$.Vid val av minustecken: Vi f\u00e5r l\u00f6sningarna $\\left\\{-\\frac{\\pi}{2}+2 k \\pi\\right\\}$, vilket \u00e4r samma l\u00f6sningsskara som $\\left\\{\\frac{3 \\pi}{2}+2 n \\pi\\right\\}$",
         "keywords": [
             "trigonometri",
             "ekvationer"
@@ -5010,16 +5010,6 @@ const questions =
             "tyngdkraft",
             "massa",
             "radie"
-        ]
-    },
-    {
-        "questionNum": "f2023-10",
-        "question": "Hur stor \u00e4r den markerade str\u00f6mmen $I$ i den ideala elektriska kretsen i figuren?<br>A. $\\frac{U}{R}$<br>B. $\\frac{U}{2 R}$<br>C. $\\frac{2 U}{3 R}$<br>D. Annat v\u00e4rde",
-        "answer": "D",
-        "keywords": [
-            "elektricitet",
-            "ohms lag",
-            "seriekoppling"
         ]
     },
     {
@@ -7692,7 +7682,7 @@ const questions =
     {
         "questionNum": "f2009-20",
         "question": "Man vill m\u00e4ta h\u00f6jden p\u00e5 en byggnad genom att sl\u00e4ppa en kula fr\u00e5n taket och lyssna efter ljudet fr\u00e5n dess nedslag i marken. Man m\u00e4ter tiden $T$ fr\u00e5n det kulan sl\u00e4pps fr\u00e5n byggnadens tak till det att ljudet fr\u00e5n nedslaget n\u00e5r upp till samma st\u00e4lle som kulan sl\u00e4pptes fr\u00e5n. Uttryck byggnadens h\u00f6jd $h$ i termer av $T$, tyngdaccelerationen $g$ och ljudhastigheten $c$, d\u00e5 luftmotst\u00e5ndet p\u00e5 kulan \u00e4r f\u00f6rsumbart.<br>",
-        "answer": "$80 \\%$<br> Vi b\u00f6rjar med att ber\u00e4kna tiden $t_1$ det tar f\u00f6r kulan att falla till marken och tiden $t_2$ det tar f\u00f6r ljudet att n\u00e5 tillbaka upp.<br><br>Att falla en str\u00e4cka $h$ fr\u00e5n vila med accelerationen $g$ (tyngdaccelerationen) tar tiden $t_1=\\sqrt{\\frac{2 h}{g}}$. F\u00f6r ljudet att f\u00e4rdas str\u00e4ckan $h$ med konstant hastighet $c$ tar tiden $t_2=\\frac{h}{c}$.<br><br>Den totala tiden fr\u00e5n det att kulan sl\u00e4pps till det att ljudet av nedslaget h\u00f6rs \u00e4r allts\u00e5 $T=t_1+t_2=$ $\\sqrt{\\frac{2 h}{g}}+\\frac{h}{c} . \\mathrm{Nu}$ \u00e4r det $T$ som m\u00e4ts och $h$ som s\u00f6ks, s\u00e5 vi beh\u00f6ver l\u00f6sa detta samband f\u00f6r $h$ som funktion av $T$.<br>Flytta termen $\\frac{h}{c}$ till v\u00e4nsterledet och kvadrera, s\u00e5 erh\u00e5lls $\\left(T-\\frac{h}{c}\\right)^2=\\frac{2 h}{g}$. Detta ger en andragradsekvation f\u00f6r $h$ som l\u00f6ses med standardmetod. L\u00f6sningen \u00e4r<br>$$<br>h=c T\\left\\{1+\\frac{c}{g T} \\pm \\sqrt{\\left(1+\\frac{c}{g T}\\right)^2-1}\\right\\}<br>$$<br>(detta kan skrivas p\u00e5 n\u00e5gra olika s\u00e4tt). Plustecknet kan uteslutas eftersom $h&lt;c T$, dvs. eftersom str\u00e4ckan ljudet g\u00e5r p\u00e5 tiden $T$ m\u00e5ste vara st\u00f6rre \u00e4n $h$. Den \"felaktiga\" l\u00f6sningen uppkom p\u00e5 grund av kvadreringen som gjordes p\u00e5 v\u00e4gen; f\u00f6re kvadreringen var b\u00e5de v\u00e4nster- och h\u00f6gerled positiva. H\u00f6jden \u00e4r allts\u00e5<br>$$<br>h=c T\\left\\{1+\\frac{c}{g T}-\\sqrt{\\left(1+\\frac{c}{g T}\\right)^2-1}\\right\\}<br>$$<br>En f\u00f6rsta kontroll av svaret \u00e4r att det har korrekt dimension. En annan kontroll kan t.ex. vara vad som h\u00e4nder om $\\frac{c}{g T}$ \u00e4r liten, dvs. om \"ljudhastigheten \u00e4r l\u00e5g\". D\u00e5 n\u00e4rmar sig uttrycket $h \\approx c T$, vilket st\u00e4mmer med att den mesta tiden g\u00e5r \u00e5t till att ljudet skall f\u00e4rdas.",
+        "answer": "$80 \\%$<br> Vi b\u00f6rjar med att ber\u00e4kna tiden $t_1$ det tar f\u00f6r kulan att falla till marken och tiden $t_2$ det tar f\u00f6r ljudet att n\u00e5 tillbaka upp.<br><br>Att falla en str\u00e4cka $h$ fr\u00e5n vila med accelerationen $g$ (tyngdaccelerationen) tar tiden $t_1=\\sqrt{\\frac{2 h}{g}}$. F\u00f6r ljudet att f\u00e4rdas str\u00e4ckan $h$ med konstant hastighet $c$ tar tiden $t_2=\\frac{h}{c}$.<br><br>Den totala tiden fr\u00e5n det att kulan sl\u00e4pps till det att ljudet av nedslaget h\u00f6rs \u00e4r allts\u00e5 $T=t_1+t_2=$ $\\sqrt{\\frac{2 h}{g}}+\\frac{h}{c} . \\mathrm{Nu}$ \u00e4r det $T$ som m\u00e4ts och $h$ som s\u00f6ks, s\u00e5 vi beh\u00f6ver l\u00f6sa detta samband f\u00f6r $h$ som funktion av $T$.<br>Flytta termen $\\frac{h}{c}$ till v\u00e4nsterledet och kvadrera, s\u00e5 erh\u00e5lls $\\left(T-\\frac{h}{c}\\right)^2=\\frac{2 h}{g}$. Detta ger en andragradsekvation f\u00f6r $h$ som l\u00f6ses med standardmetod. L\u00f6sningen \u00e4r<br>$$<br>h=c T\\left\\{1+\\frac{c}{g T} ± \\sqrt{\\left(1+\\frac{c}{g T}\\right)^2-1}\\right\\}<br>$$<br>(detta kan skrivas p\u00e5 n\u00e5gra olika s\u00e4tt). Plustecknet kan uteslutas eftersom $h&lt;c T$, dvs. eftersom str\u00e4ckan ljudet g\u00e5r p\u00e5 tiden $T$ m\u00e5ste vara st\u00f6rre \u00e4n $h$. Den \"felaktiga\" l\u00f6sningen uppkom p\u00e5 grund av kvadreringen som gjordes p\u00e5 v\u00e4gen; f\u00f6re kvadreringen var b\u00e5de v\u00e4nster- och h\u00f6gerled positiva. H\u00f6jden \u00e4r allts\u00e5<br>$$<br>h=c T\\left\\{1+\\frac{c}{g T}-\\sqrt{\\left(1+\\frac{c}{g T}\\right)^2-1}\\right\\}<br>$$<br>En f\u00f6rsta kontroll av svaret \u00e4r att det har korrekt dimension. En annan kontroll kan t.ex. vara vad som h\u00e4nder om $\\frac{c}{g T}$ \u00e4r liten, dvs. om \"ljudhastigheten \u00e4r l\u00e5g\". D\u00e5 n\u00e4rmar sig uttrycket $h \\approx c T$, vilket st\u00e4mmer med att den mesta tiden g\u00e5r \u00e5t till att ljudet skall f\u00e4rdas.",
         "keywords": [
             "mekanik",
             "hastighet",
@@ -7903,16 +7893,6 @@ const questions =
         "keywords": [
             "krafter",
             "j\u00c3\u00a4mvikt"
-        ]
-    },
-    {
-        "questionNum": "f2007-2",
-        "question": "En gungbr\u00e4da med vikten $10 \\mathrm{~kg}$ (j\u00e4mnt f\u00f6rdelad l\u00e4ngs dess l\u00e4ngd) och l\u00e4ngden $5.0 \\mathrm{~m}$ \u00e4r upph\u00e4ngd i sin mittpunkt. Barnet X, som v\u00e4ger $30 \\mathrm{~kg}$, sitter $1.0 \\mathrm{~m}$ fr\u00e5n ena \u00e4nden. Barnet Y v\u00e4ger $20 \\mathrm{~kg}$. I vilken av punkterna A, B, C, D eller E skall Y sitta f\u00f6r att gungbr\u00e4dan skall vara i j\u00e4mvikt?<br><br><img class='mafy_img' src='https://i.imgur.com/Zh2nsbz.png'><br>A. A<br>B. B<br>C. C<br>D. D<br>E. E",
-        "answer": "D",
-        "keywords": [
-            "mekanik",
-            "j\u00c3\u00a4mvikt",
-            "krafter"
         ]
     },
     {

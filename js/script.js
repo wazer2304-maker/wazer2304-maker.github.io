@@ -1,4 +1,4 @@
-const wolfram_api_url = "" /*Url of instance: server.py*/ 
+
 var inputhistory = [];
 var arrow_line = 0;
 
@@ -123,26 +123,6 @@ function clear_console_quick() {
 		document.getElementById("output")
 		.innerHTML = "";
 }
-
-async function compute_line(line, query) {
-	setTimeout(() => {
-		t = fetch(wolfram_api_url, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: (JSON.stringify({
-				query: query
-			}))
-		})
-		
-		t.then(response => response.json(
-		)).then(data => {
-			create_line(data, true, 0, "mini_comment");
-		});
-	}, 100);
-		
-	}
 
 function reload_math() {
 	MathJax.Hub.Typeset();
