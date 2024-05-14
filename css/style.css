@@ -42,7 +42,7 @@ main #console{
 input {
     font-size: 1.9vh;
     font-family: 'Source Code Pro', monospace;
-    margin: 30px 100px 50px 100px;
+    margin: 10px 100px 40px 100px;
     background: #1d2125;
     border: none;
     grid-area: input;
