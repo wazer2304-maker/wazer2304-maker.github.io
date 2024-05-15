@@ -227,6 +227,7 @@ function does_command_exist(command) { // checks if the command exists
 }
 
 function interpret(input) { // interprets the input
+	if (input == "") { return }
 	create_line(input, false, 0);
 	command = get_command(input).toLowerCase();
 	command_args = get_args(input);
