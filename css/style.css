@@ -283,3 +283,7 @@ input ~ a {
         -webkit-clip-path: polygon(50% 0, 0 0, 100% 100%);
 }
 }
+
+input, input ~ a {
+    z-index: 1000;
+}
