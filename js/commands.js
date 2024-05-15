@@ -183,9 +183,9 @@ if (command == "link") {
             create_line("<br>Mafy är ett program som hjälper dig att träna på matematik och fysikprovet.", true, 0);
             create_line("Du kan använda kommandot -r för att markera rätt och -f för att markera fel.", true, 0);
             create_line("Du kan också använda #-tecknet för att kommentera eller skriva beräkningar.", true, 0);
-            create_line("Du kan också använda -stop för att avsluta omgången.<br>", true, 0);
+            create_line("Du kan också använda -exit alternativt -stop för att avsluta omgången.<br>", true, 0);
             create_line("Du kan också använda /tpq för att sätta tiden (minuter) per fråga.", true, 0);
-            create_line("Exempel: 'mafy /questions 75 /tpq 4' för ett riktigt prov-exempel", true, 0);
+            create_line("Exempel: 'mafy /questions 52 /tpq 4' för ett riktigt prov-exempel", true, 0);
             return;
         }
 
@@ -203,7 +203,7 @@ if (command == "link") {
 
         clear_console_quick();
         
-        create_line("'#' används för kommentarer/beräkningar, <br>-stop för att avsluta omgången, <br>-r för att markera rätt och <br>-f för att markera fel.", true, 0, "larger");
+        create_line("'#' används för kommentarer/beräkningar, <br>-stop alternativt -exit för att avsluta omgången, <br>-r för att markera rätt och <br>-f för att markera fel.", true, 0, "larger");
         create_line("<br>Lycka till!<br><br>", true, 0, "larger");
         
         setTimeout(function() {
@@ -287,10 +287,10 @@ function mafy_capture(value) {
         return;
     }
     if (value[0] == "-") {
-        if (value[1] == "r") {
+        if (value[1].toLowerCase() == "r") {
             document.correct = document.correct + 1;
             create_line("+1 Rätt", true, 0, "correct");
-        } else {
+        } else if (value[1].toLowerCase() == "f") {
             document.wrong = document.wrong + 1;
             create_line("+1 Fel", true, 0, "wrong");
         }

@@ -129,7 +129,7 @@ function reload_math() {
 }
 
 function captured_input(value) {
-	if (value == "-stop") {
+	if (value == "-stop" || value == "-exit") {
 		clear_inputhistory();
 		document.capture = false;
 		document.writecapture = false;
@@ -279,7 +279,7 @@ function default_help() {
 function execute(command, command_args) { // executes the command
 	command = command.toLowerCase();
 	try {
-		document.title = input.value;
+		document.title = command[0].toUpperCase() + command.substring(1).toLowerCase() + " - Console";
 		run(command, command_args);
 	}
 	catch (err) {
