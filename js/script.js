@@ -236,9 +236,13 @@ function interpret(input) { // interprets the input
 		redundant_arguments = check_for_redundant_arguments(command, command_args);
 		if (redundant_arguments[0]) {
 			create_line("Redundant arguments: " + redundant_arguments, true, 1);
-			default_arg(command);
+			setTimeout(function() {
+				default_arg(command);
+				execute(command, JSON.parse(command_args));
+			}, 1000);
+		} else {
+			execute(command, JSON.parse(command_args));
 		}
-		execute(command, JSON.parse(command_args));
 	}
 	else {
 		create_line("Command does not exist. Type 'help' for available commands.", true, 2)
