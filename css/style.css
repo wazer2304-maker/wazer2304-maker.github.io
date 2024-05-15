@@ -20,7 +20,7 @@ body, html, main {
     padding: 0;
     margin: 0;
 }
-main #console{
+main div#console{
     display: grid;
     grid-template-rows: 2fr 40fr 5fr;
     grid-template-areas: "title"
@@ -29,6 +29,12 @@ main #console{
     width: 100%;
     height: calc(100vh - 28px);
     background-color: #191b1e;
+}
+
+main div#console p {
+    z-index: 109;
+    display: block;
+    position: relative;
 }
 
 #output {
@@ -209,6 +215,7 @@ br {
 }
 
 .user_output {
+    z-index: 2;
     text-shadow:rgb(231, 231, 211) 1px 0px 1px;
     margin-top: 15px;
 }
@@ -226,7 +233,53 @@ input ~ a {
     display: block;
     bottom: 0;
     position: fixed;
-    opacity: 1;
     filter: grayscale(100%) invert(1);
     -webkit-filter: grayscale(100%) invert(1);
+}
+
+#background {
+    background: linear-gradient(rgba(219, 219, 219, 0), rgba(240, 240, 240, 0.3));
+    filter: grayscale(100%) invert(1);
+    -webkit-filter: grayscale(100%) invert(1);
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.05rem;
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    width: 140vw;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    animation: clippy_spin 4s infinite ease-in-out alternate-reverse;
+    -webkit-animation: clippy_spin 4s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes clippy_spin {
+    0% {
+        background: linear-gradient(rgba(219, 219, 219, 0), rgba(240, 240, 240, 0.3));
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+    100% {
+        transform: rotate(36deg);
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        clip-path: polygon(0 0, 0 0, 100% 100%);
+        -webkit-clip-path: polygon(50% 0, 0 0, 100% 100%);
+}
 }

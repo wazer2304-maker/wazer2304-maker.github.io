@@ -66,7 +66,7 @@ function clear_inputhistory() {
 }
 
 function console_welcome() {
-	create_line("Welcome to the console! <br> &nbsp;- Type 'help' for available commands. <br> &nbsp;- Use up and down arrow keys to copy lines. (↑/↓) <br> &nbsp;- Use [shift] + [backspace] to delete the above line. ", true, 0);
+	create_line("Welcome to the console! <br> &nbsp;&gt; Type 'help' for available commands. <br> &nbsp;&gt; Use up and down arrow keys to copy lines. (↑/↓) <br> &nbsp;&gt; Use [shift] + [backspace] to delete the above line. ", true, 0);
 	input.focus();
 }
 
@@ -146,7 +146,7 @@ function captured_input(value) {
 	}
 }
 
-function occurrences(string, subString, allowOverlapping) {
+function occurrences(string, subString, allowOverlapping) { /*This function is stolen from some online forum*/
 
     string += "";
     subString += "";
@@ -171,11 +171,11 @@ function get_args(data) { // returns a json object of the arguments
 	deconstruct_input = data.split(" ");
 	for (var i = 0; i < deconstruct_input.length; i++) {
 		obj = deconstruct_input[i];
-		if (obj[0] == "/") {
-			obj = obj.replace("/", "");
+		if (obj[0] == "-") {
+			obj = obj.replace("-", "");
 			add_term = [];
 			for (var n = i + 1; n < i + 20; n++) {
-				if (deconstruct_input[n] == null || deconstruct_input[n].replace(" ", "") == "" || deconstruct_input[n][0] == "/") {
+				if (deconstruct_input[n] == null || deconstruct_input[n].replace(" ", "") == "" || deconstruct_input[n][0] == "-") {
 					break;
 				}
 				term = deconstruct_input[n];
@@ -240,7 +240,7 @@ function interpret(input) { // interprets the input
 		execute(command, JSON.parse(command_args));
 	}
 	else {
-		create_line("Command does not exist, Type 'help' for available commands.", true, 2)
+		create_line("Command does not exist. Type 'help' for available commands.", true, 2)
 	}
 }
 
@@ -255,7 +255,7 @@ function available_arguments(command) { // returns the available argument/s
 	} else {
 		len = args.length;
 		for (var i = 0; i < args.length; i++) {
-			args[i] = "<br>&nbsp;&nbsp;/" + args[i] + "   <span class='mini_comment'>&lt;" + descriptions[args[i]] + "&gt;</span>";
+			args[i] = "<br>&nbsp;&nbsp;-" + args[i] + "   <span class='mini_comment'>&lt;" + descriptions[args[i]] + "&gt;</span>";
 		}
 	}
 	
